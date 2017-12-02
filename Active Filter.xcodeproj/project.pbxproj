@@ -15,6 +15,8 @@
 		CAE08F081FBC2801006DAD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE08F061FBC2801006DAD91 /* LaunchScreen.storyboard */; };
 		CAE08F131FBC2801006DAD91 /* Active_FilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08F121FBC2801006DAD91 /* Active_FilterTests.m */; };
 		CAE08F1E1FBC2801006DAD91 /* Active_FilterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08F1D1FBC2801006DAD91 /* Active_FilterUITests.m */; };
+		CAE32C041FD30FB000BCD21C /* BasicModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE32C031FD30FB000BCD21C /* BasicModeViewController.m */; };
+		CAE32C061FD3124D00BCD21C /* icons8-left-80.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE32C051FD3124D00BCD21C /* icons8-left-80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		CAE08F191FBC2801006DAD91 /* Active FilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Active FilterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE08F1D1FBC2801006DAD91 /* Active_FilterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Active_FilterUITests.m; sourceTree = "<group>"; };
 		CAE08F1F1FBC2801006DAD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE32C021FD30FB000BCD21C /* BasicModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicModeViewController.h; sourceTree = "<group>"; };
+		CAE32C031FD30FB000BCD21C /* BasicModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicModeViewController.m; sourceTree = "<group>"; };
+		CAE32C051FD3124D00BCD21C /* icons8-left-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-left-80.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +110,10 @@
 				CAE08EFC1FBC2801006DAD91 /* AppDelegate.m */,
 				CAE08EFE1FBC2801006DAD91 /* ViewController.h */,
 				CAE08EFF1FBC2801006DAD91 /* ViewController.m */,
+				CAE32C021FD30FB000BCD21C /* BasicModeViewController.h */,
+				CAE32C031FD30FB000BCD21C /* BasicModeViewController.m */,
 				CAE08F011FBC2801006DAD91 /* Main.storyboard */,
+				CAE32C051FD3124D00BCD21C /* icons8-left-80.png */,
 				CAE08F041FBC2801006DAD91 /* Assets.xcassets */,
 				CAE08F061FBC2801006DAD91 /* LaunchScreen.storyboard */,
 				CAE08F091FBC2801006DAD91 /* Info.plist */,
@@ -248,6 +256,7 @@
 			files = (
 				CAE08F081FBC2801006DAD91 /* LaunchScreen.storyboard in Resources */,
 				CAE08F051FBC2801006DAD91 /* Assets.xcassets in Resources */,
+				CAE32C061FD3124D00BCD21C /* icons8-left-80.png in Resources */,
 				CAE08F031FBC2801006DAD91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +284,7 @@
 			files = (
 				CAE08F001FBC2801006DAD91 /* ViewController.m in Sources */,
 				CAE08EFD1FBC2801006DAD91 /* AppDelegate.m in Sources */,
+				CAE32C041FD30FB000BCD21C /* BasicModeViewController.m in Sources */,
 				CAE08EFA1FBC2801006DAD91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
