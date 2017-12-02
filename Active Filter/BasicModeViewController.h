@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *FilterCharacteristics;
 @property (weak, nonatomic) IBOutlet UIPickerView *Ripple;
 @property (weak, nonatomic) IBOutlet UIPickerView *Poles;
-
+@property (weak, nonatomic) IBOutlet UITextField *CutOff;
+@property (weak, nonatomic) IBOutlet UIPickerView *Frequency;
 @end

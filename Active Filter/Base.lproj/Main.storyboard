@@ -252,12 +252,29 @@ Frequency</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4O-3B-kx2">
-                                <rect key="frame" x="180" y="521" width="163" height="38"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-nv-qOn">
+                                <rect key="frame" x="180" y="525" width="115" height="38"/>
+                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="xgg-Wc-RZK"/>
-                                    <constraint firstAttribute="height" constant="38" id="yUX-ti-9YB"/>
+                                    <constraint firstAttribute="height" constant="38" id="zbY-64-VNR"/>
+                                    <constraint firstAttribute="width" constant="115" id="zfs-ld-qBv"/>
                                 </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TZ-hA-yiZ">
+                                <rect key="frame" x="301" y="525" width="42" height="38"/>
+                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ggd-k4-HmO"/>
+                                    <constraint firstAttribute="width" constant="42" id="wLv-c9-pz3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.26601317524909973" green="0.41033869981765747" blue="0.8241957426071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -273,28 +290,32 @@ Frequency</string>
                             <constraint firstItem="BJi-TR-ICc" firstAttribute="top" secondItem="fIl-MY-FsX" secondAttribute="bottom" constant="19" id="CiA-AP-JNI"/>
                             <constraint firstItem="InB-8C-TvG" firstAttribute="leading" secondItem="KVq-e9-mA1" secondAttribute="leadingMargin" constant="12" id="D34-ii-l3V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LGK-XQ-J19" secondAttribute="trailing" constant="16" id="DLY-3f-QO2"/>
+                            <constraint firstItem="Dbv-nv-qOn" firstAttribute="top" secondItem="hoK-ty-5IO" secondAttribute="bottom" constant="45" id="FBJ-Bz-dhT"/>
                             <constraint firstItem="81s-kV-Vhl" firstAttribute="centerX" secondItem="KVq-e9-mA1" secondAttribute="centerX" id="GtS-5t-2kd"/>
                             <constraint firstItem="InB-8C-TvG" firstAttribute="top" secondItem="5V5-dj-5AH" secondAttribute="bottom" constant="34" id="MpX-tJ-oQs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="L4O-3B-kx2" secondAttribute="trailing" constant="16" id="O4T-BX-UCD"/>
                             <constraint firstItem="Bvf-Om-U22" firstAttribute="top" secondItem="3ZY-8Z-ZXG" secondAttribute="bottom" constant="50" id="PuD-kK-eHI"/>
                             <constraint firstItem="laK-3i-vhv" firstAttribute="centerX" secondItem="KVq-e9-mA1" secondAttribute="centerX" id="QwI-eb-ReL"/>
-                            <constraint firstItem="L4O-3B-kx2" firstAttribute="top" secondItem="hoK-ty-5IO" secondAttribute="bottom" constant="41" id="RFw-lR-DRD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="S9y-5n-fcE" secondAttribute="leading" id="Rty-7X-ULw"/>
                             <constraint firstItem="UOy-uP-R1V" firstAttribute="leading" secondItem="KVq-e9-mA1" secondAttribute="leadingMargin" constant="7" id="UVs-7j-3FV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bvf-Om-U22" secondAttribute="trailing" constant="16" id="WP8-qx-qn7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5TZ-hA-yiZ" secondAttribute="trailing" constant="16" id="Z6x-YF-729"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hoK-ty-5IO" secondAttribute="trailing" constant="16" id="Zp9-aI-kmV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fIl-MY-FsX" secondAttribute="trailing" constant="43" id="aNl-KV-glb"/>
                             <constraint firstItem="81s-kV-Vhl" firstAttribute="top" secondItem="laK-3i-vhv" secondAttribute="bottom" constant="17" id="aQJ-yu-xgB"/>
+                            <constraint firstItem="5TZ-hA-yiZ" firstAttribute="leading" secondItem="Dbv-nv-qOn" secondAttribute="trailing" constant="6" id="azC-da-5ja"/>
                             <constraint firstAttribute="leadingMargin" secondItem="lbK-ZK-LvT" secondAttribute="leading" id="bBS-T9-FDD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3ZY-8Z-ZXG" secondAttribute="trailing" constant="16" id="dlM-jT-8Kg"/>
                             <constraint firstItem="5V5-dj-5AH" firstAttribute="top" secondItem="UOy-uP-R1V" secondAttribute="bottom" constant="51" id="g5W-Hu-s8j"/>
                             <constraint firstAttribute="leadingMargin" secondItem="LdH-Za-aK0" secondAttribute="leading" id="jQn-3I-nXK"/>
+                            <constraint firstItem="5TZ-hA-yiZ" firstAttribute="top" secondItem="hoK-ty-5IO" secondAttribute="bottom" constant="45" id="mcJ-If-ceY"/>
                             <constraint firstItem="LGK-XQ-J19" firstAttribute="top" secondItem="81s-kV-Vhl" secondAttribute="bottom" constant="36" id="xrt-vd-iZg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CutOff" destination="Dbv-nv-qOn" id="L0Z-7v-bUk"/>
                         <outlet property="FilterCharacteristics" destination="3ZY-8Z-ZXG" id="BL4-O2-eDn"/>
                         <outlet property="FilterType" destination="LGK-XQ-J19" id="3eD-D6-d4c"/>
+                        <outlet property="Frequency" destination="5TZ-hA-yiZ" id="BPZ-QI-5I3"/>
                         <outlet property="Poles" destination="hoK-ty-5IO" id="pwb-ol-75z"/>
                         <outlet property="Ripple" destination="Bvf-Om-U22" id="c9c-PT-uuD"/>
                     </connections>
