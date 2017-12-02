@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BasicModeViewController : UIViewController
+@interface BasicModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *FilterType;
+@property (weak, nonatomic) IBOutlet UIPickerView *FilterCharacteristics;
+@property (weak, nonatomic) IBOutlet UIPickerView *Ripple;
+@property (weak, nonatomic) IBOutlet UIPickerView *Poles;
 
 @end

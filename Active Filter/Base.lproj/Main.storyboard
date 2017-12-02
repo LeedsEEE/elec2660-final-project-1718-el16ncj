@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATORS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrH-Td-oct">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrH-Td-oct">
                                 <rect key="frame" x="69.5" y="28" width="236" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="UOF-4G-uia"/>
@@ -97,8 +97,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATORS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laK-3i-vhv">
-                                <rect key="frame" x="69" y="28" width="236" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laK-3i-vhv">
+                                <rect key="frame" x="69.5" y="28" width="236" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="2CF-u5-Dso"/>
                                     <constraint firstAttribute="width" constant="236" id="WSP-9E-8iV"/>
@@ -108,7 +108,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81s-kV-Vhl">
-                                <rect key="frame" x="109" y="114" width="156" height="32"/>
+                                <rect key="frame" x="109.5" y="114" width="156" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="Kay-Ps-Gif"/>
                                     <constraint firstAttribute="height" constant="32" id="z93-Z7-nzL"/>
@@ -117,39 +117,54 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type of Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-Za-aK0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdH-Za-aK0">
                                 <rect key="frame" x="16" y="184" width="139" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="G77-ND-Y04"/>
+                                    <constraint firstAttribute="height" constant="36" id="PBY-Zm-cuM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-ZK-LvT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-ZK-LvT">
                                 <rect key="frame" x="16" y="264" width="151" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="UP4-nL-kvJ"/>
+                                    <constraint firstAttribute="height" constant="46" id="lED-FF-ncA"/>
+                                </constraints>
                                 <string key="text">Filter 
 Characteristics</string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ripple (dB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOy-uP-R1V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ripple (dB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOy-uP-R1V">
                                 <rect key="frame" x="23" y="358" width="124" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="E19-6Z-Sti"/>
+                                    <constraint firstAttribute="width" constant="124" id="Myh-Kz-0zY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Poles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5V5-dj-5AH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Poles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5V5-dj-5AH">
                                 <rect key="frame" x="12" y="443" width="159" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="M4a-PH-lCd"/>
+                                    <constraint firstAttribute="height" constant="36" id="sue-oW-W88"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InB-8C-TvG">
-                                <rect key="frame" x="28" y="529" width="115" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InB-8C-TvG">
+                                <rect key="frame" x="28" y="513" width="115" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="NRd-ar-aYA"/>
+                                    <constraint firstAttribute="width" constant="115" id="ypY-BO-x9l"/>
+                                </constraints>
                                 <string key="text">Cut-off 
 Frequency</string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
@@ -167,17 +182,122 @@ Frequency</string>
                                     <segue destination="BYZ-38-t0r" kind="show" id="2fP-FA-3Jh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIl-MY-FsX">
+                                <rect key="frame" x="141" y="600" width="175" height="48"/>
+                                <color key="backgroundColor" red="0.97564584016799927" green="0.63757961988449097" blue="0.3784518837928772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="fIN-El-cnE"/>
+                                    <constraint firstAttribute="height" constant="48" id="g4t-71-BDt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="mDu-z0-uLd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGK-XQ-J19">
+                                <rect key="frame" x="180" y="182" width="163" height="38"/>
+                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="IUd-HG-dMa"/>
+                                    <constraint firstAttribute="width" constant="163" id="rE4-Dy-BEW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZY-8Z-ZXG">
+                                <rect key="frame" x="180" y="268" width="163" height="38"/>
+                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="K7b-HC-PSZ"/>
+                                    <constraint firstAttribute="width" constant="163" id="hYV-IJ-6xx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvf-Om-U22">
+                                <rect key="frame" x="180" y="356" width="163" height="38"/>
+                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="0FC-oV-oGn"/>
+                                    <constraint firstAttribute="height" constant="38" id="6Ye-s5-pkA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoK-ty-5IO">
+                                <rect key="frame" x="180" y="442" width="163" height="38"/>
+                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="KrY-3I-PE1"/>
+                                    <constraint firstAttribute="width" constant="163" id="qAm-UQ-ISU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4O-3B-kx2">
+                                <rect key="frame" x="180" y="521" width="163" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="xgg-Wc-RZK"/>
+                                    <constraint firstAttribute="height" constant="38" id="yUX-ti-9YB"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.26601317524909973" green="0.41033869981765747" blue="0.8241957426071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hoK-ty-5IO" firstAttribute="top" secondItem="Bvf-Om-U22" secondAttribute="bottom" constant="48" id="35Q-fi-wmF"/>
                             <constraint firstItem="BJi-TR-ICc" firstAttribute="top" secondItem="S9y-5n-fcE" secondAttribute="bottom" constant="10" id="3U9-eW-pyN"/>
+                            <constraint firstItem="3ZY-8Z-ZXG" firstAttribute="top" secondItem="LGK-XQ-J19" secondAttribute="bottom" constant="48" id="3VG-wY-b8U"/>
+                            <constraint firstItem="lbK-ZK-LvT" firstAttribute="top" secondItem="LdH-Za-aK0" secondAttribute="bottom" constant="44" id="5Ae-yQ-CXW"/>
+                            <constraint firstItem="LdH-Za-aK0" firstAttribute="top" secondItem="81s-kV-Vhl" secondAttribute="bottom" constant="38" id="8Az-sM-oJp"/>
+                            <constraint firstItem="UOy-uP-R1V" firstAttribute="top" secondItem="lbK-ZK-LvT" secondAttribute="bottom" constant="48" id="8PD-YT-cKw"/>
                             <constraint firstItem="laK-3i-vhv" firstAttribute="top" secondItem="zR3-up-GN7" secondAttribute="bottom" constant="8" id="96T-GT-4yc"/>
+                            <constraint firstItem="5V5-dj-5AH" firstAttribute="leading" secondItem="KVq-e9-mA1" secondAttribute="leadingMargin" constant="-4" id="AoZ-72-568"/>
+                            <constraint firstItem="BJi-TR-ICc" firstAttribute="top" secondItem="fIl-MY-FsX" secondAttribute="bottom" constant="19" id="CiA-AP-JNI"/>
+                            <constraint firstItem="InB-8C-TvG" firstAttribute="leading" secondItem="KVq-e9-mA1" secondAttribute="leadingMargin" constant="12" id="D34-ii-l3V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LGK-XQ-J19" secondAttribute="trailing" constant="16" id="DLY-3f-QO2"/>
                             <constraint firstItem="81s-kV-Vhl" firstAttribute="centerX" secondItem="KVq-e9-mA1" secondAttribute="centerX" id="GtS-5t-2kd"/>
+                            <constraint firstItem="InB-8C-TvG" firstAttribute="top" secondItem="5V5-dj-5AH" secondAttribute="bottom" constant="34" id="MpX-tJ-oQs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L4O-3B-kx2" secondAttribute="trailing" constant="16" id="O4T-BX-UCD"/>
+                            <constraint firstItem="Bvf-Om-U22" firstAttribute="top" secondItem="3ZY-8Z-ZXG" secondAttribute="bottom" constant="50" id="PuD-kK-eHI"/>
                             <constraint firstItem="laK-3i-vhv" firstAttribute="centerX" secondItem="KVq-e9-mA1" secondAttribute="centerX" id="QwI-eb-ReL"/>
+                            <constraint firstItem="L4O-3B-kx2" firstAttribute="top" secondItem="hoK-ty-5IO" secondAttribute="bottom" constant="41" id="RFw-lR-DRD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="S9y-5n-fcE" secondAttribute="leading" id="Rty-7X-ULw"/>
+                            <constraint firstItem="UOy-uP-R1V" firstAttribute="leading" secondItem="KVq-e9-mA1" secondAttribute="leadingMargin" constant="7" id="UVs-7j-3FV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bvf-Om-U22" secondAttribute="trailing" constant="16" id="WP8-qx-qn7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hoK-ty-5IO" secondAttribute="trailing" constant="16" id="Zp9-aI-kmV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fIl-MY-FsX" secondAttribute="trailing" constant="43" id="aNl-KV-glb"/>
                             <constraint firstItem="81s-kV-Vhl" firstAttribute="top" secondItem="laK-3i-vhv" secondAttribute="bottom" constant="17" id="aQJ-yu-xgB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lbK-ZK-LvT" secondAttribute="leading" id="bBS-T9-FDD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ZY-8Z-ZXG" secondAttribute="trailing" constant="16" id="dlM-jT-8Kg"/>
+                            <constraint firstItem="5V5-dj-5AH" firstAttribute="top" secondItem="UOy-uP-R1V" secondAttribute="bottom" constant="51" id="g5W-Hu-s8j"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LdH-Za-aK0" secondAttribute="leading" id="jQn-3I-nXK"/>
+                            <constraint firstItem="LGK-XQ-J19" firstAttribute="top" secondItem="81s-kV-Vhl" secondAttribute="bottom" constant="36" id="xrt-vd-iZg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FilterCharacteristics" destination="3ZY-8Z-ZXG" id="BL4-O2-eDn"/>
+                        <outlet property="FilterType" destination="LGK-XQ-J19" id="3eD-D6-d4c"/>
+                        <outlet property="Poles" destination="hoK-ty-5IO" id="pwb-ol-75z"/>
+                        <outlet property="Ripple" destination="Bvf-Om-U22" id="c9c-PT-uuD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chP-w0-MNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
