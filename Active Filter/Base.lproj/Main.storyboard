@@ -69,13 +69,38 @@
                                     <segue destination="Vqi-T4-yvI" kind="show" id="jBv-ff-cGQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDh-QR-6QP">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dUq-jW-byB"/>
+                                    <constraint firstAttribute="width" constant="50" id="tOw-7i-4sY"/>
+                                </constraints>
+                                <state key="normal" image="info.png"/>
+                                <connections>
+                                    <segue destination="iZu-MB-z2v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="SUR-Ni-mFg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN MENU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-7s-rCN">
+                                <rect key="frame" x="112" y="124" width="151" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KUM-jv-UQV"/>
+                                    <constraint firstAttribute="width" constant="151" id="vtd-cz-JB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313730000001" green="0.31764705879999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jrH-Td-oct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FFR-48-UEM"/>
                             <constraint firstItem="qgQ-j4-iw0" firstAttribute="top" secondItem="KxG-SZ-teT" secondAttribute="bottom" constant="74" id="L5N-qA-aOH"/>
                             <constraint firstItem="KxG-SZ-teT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Px2-gh-XUG"/>
+                            <constraint firstItem="NHx-7s-rCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R1X-Tp-yUz"/>
                             <constraint firstItem="jrH-Td-oct" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Uno-vQ-AwY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wDh-QR-6QP" secondAttribute="bottom" constant="20" id="bhR-6O-E2I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wDh-QR-6QP" secondAttribute="trailing" id="coL-78-hZw"/>
+                            <constraint firstItem="NHx-7s-rCN" firstAttribute="top" secondItem="jrH-Td-oct" secondAttribute="bottom" constant="27" id="gz1-6z-olx"/>
                             <constraint firstItem="qgQ-j4-iw0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iuf-EA-T9f"/>
                             <constraint firstItem="KxG-SZ-teT" firstAttribute="top" secondItem="jrH-Td-oct" secondAttribute="bottom" constant="140" id="xFF-w0-3IZ"/>
                         </constraints>
@@ -84,6 +109,203 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4fX-f3-Vd4">
+            <objects>
+                <viewController id="iZu-MB-z2v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FIK-eh-qwz"/>
+                        <viewControllerLayoutGuide type="bottom" id="75S-ja-MLc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54n-Tl-geu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v7-be-wpf">
+                                <rect key="frame" x="69" y="28" width="236" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="NsA-Ga-dZs"/>
+                                    <constraint firstAttribute="width" constant="236" id="sLe-oT-wLp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nW-VO-0nC">
+                                <rect key="frame" x="44" y="397" width="287" height="66"/>
+                                <color key="backgroundColor" red="0.9606370192" green="0.57068307780000005" blue="0.30532669759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="FDH-BD-B3w"/>
+                                    <constraint firstAttribute="height" constant="66" id="l7r-Mc-PvB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="ADVANCED MODE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="KJm-ig-aAa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="4Ku-PP-8ed"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxS-A4-7fF">
+                                <rect key="frame" x="44" y="257" width="287" height="66"/>
+                                <color key="backgroundColor" red="0.9606370192" green="0.57068307780000005" blue="0.30532669759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="cud-wP-M3D"/>
+                                    <constraint firstAttribute="height" constant="66" id="iOK-8i-m1x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="BASIC MODE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Cvw-OV-X2Z" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Yxh-Bh-TWh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUTORIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkN-ZR-HvZ">
+                                <rect key="frame" x="121" y="132" width="132" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="QDD-oT-Dt3"/>
+                                    <constraint firstAttribute="width" constant="132" id="jQ0-xQ-cSB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-we-mur">
+                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="biD-Qg-88L"/>
+                                    <constraint firstAttribute="height" constant="60" id="k1K-Sc-0dI"/>
+                                </constraints>
+                                <state key="normal" image="home.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="YNt-hw-KlT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26601317524909973" green="0.41033869981765747" blue="0.8241957426071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bkN-ZR-HvZ" firstAttribute="centerX" secondItem="54n-Tl-geu" secondAttribute="centerX" id="8aY-D7-IjF"/>
+                            <constraint firstItem="9v7-be-wpf" firstAttribute="centerX" secondItem="54n-Tl-geu" secondAttribute="centerX" id="BCC-rA-VyZ"/>
+                            <constraint firstItem="7nW-VO-0nC" firstAttribute="top" secondItem="dxS-A4-7fF" secondAttribute="bottom" constant="74" id="Eif-xU-aJ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c6H-we-mur" secondAttribute="trailing" id="TT3-Hh-bYY"/>
+                            <constraint firstItem="dxS-A4-7fF" firstAttribute="top" secondItem="bkN-ZR-HvZ" secondAttribute="bottom" constant="93" id="cah-51-lcg"/>
+                            <constraint firstItem="dxS-A4-7fF" firstAttribute="centerX" secondItem="54n-Tl-geu" secondAttribute="centerX" id="icc-NS-0bm"/>
+                            <constraint firstItem="bkN-ZR-HvZ" firstAttribute="top" secondItem="9v7-be-wpf" secondAttribute="bottom" constant="35" id="jBg-OT-G0J"/>
+                            <constraint firstItem="9v7-be-wpf" firstAttribute="top" secondItem="FIK-eh-qwz" secondAttribute="bottom" constant="8" id="jCM-XX-yeB"/>
+                            <constraint firstItem="75S-ja-MLc" firstAttribute="top" secondItem="c6H-we-mur" secondAttribute="bottom" constant="20" id="xld-sK-1gC"/>
+                            <constraint firstItem="7nW-VO-0nC" firstAttribute="centerX" secondItem="54n-Tl-geu" secondAttribute="centerX" id="yRu-gg-sO6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SI1-Uo-P72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="975.56221889055485"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Th5-5k-6Cs">
+            <objects>
+                <viewController id="Cvw-OV-X2Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TzN-Ps-XT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="QKy-nd-Sj0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6mH-UL-SqG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAv-t7-iJC">
+                                <rect key="frame" x="109" y="105" width="156" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LSN-9F-Aov"/>
+                                    <constraint firstAttribute="width" constant="156" id="d6v-zM-TSJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="J04-U3-Hdz">
+                                <rect key="frame" x="16" y="145" width="343" height="351"/>
+                                <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Lxy-fM-l45"/>
+                                    <constraint firstAttribute="height" constant="351" id="bu1-RC-ECz"/>
+                                </constraints>
+                                <string key="text">In 'Basic Mode', there are five input fields for you namely, type of filter, filter characteristics, ripple, number of poles and cut-off frequency.
+
+You need to fill in these details and on pressing the calculate button, you get a circuit diagram and an AC sweep graph.
+
+You can use the back button (represented by an arrow) to go back to the previous page and the home button (represented by a house symbol) to return to the main menu.
+
+Enjoy using Active Filters Calculator!
+</string>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-hV-CU6">
+                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2An-9s-hgd"/>
+                                    <constraint firstAttribute="height" constant="60" id="5Tu-av-mVE"/>
+                                </constraints>
+                                <state key="normal" image="home.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="pDd-Qi-NgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isw-ne-0t2">
+                                <rect key="frame" x="16" y="581" width="61" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="4ef-0e-IlD"/>
+                                    <constraint firstAttribute="width" constant="61" id="Cgy-B9-gVd"/>
+                                </constraints>
+                                <state key="normal" image="icons8-left-80.png"/>
+                                <connections>
+                                    <segue destination="iZu-MB-z2v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="2OQ-5J-6Lj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-vE-wLW">
+                                <rect key="frame" x="69" y="28" width="236" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="FRa-a0-Pm4"/>
+                                    <constraint firstAttribute="width" constant="236" id="wR3-LA-pJv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="isw-ne-0t2" secondAttribute="leading" id="EI3-Ay-8vY"/>
+                            <constraint firstItem="uAY-vE-wLW" firstAttribute="top" secondItem="TzN-Ps-XT8" secondAttribute="bottom" constant="8" id="FzT-RK-oJV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J04-U3-Hdz" secondAttribute="trailing" id="JD6-mr-7no"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uf2-hV-CU6" secondAttribute="trailing" id="OrN-g8-qSh"/>
+                            <constraint firstItem="QKy-nd-Sj0" firstAttribute="top" secondItem="uf2-hV-CU6" secondAttribute="bottom" constant="20" id="Pvr-nz-xOU"/>
+                            <constraint firstItem="YAv-t7-iJC" firstAttribute="top" secondItem="uAY-vE-wLW" secondAttribute="bottom" constant="8" id="Txy-1Y-ORM"/>
+                            <constraint firstItem="QKy-nd-Sj0" firstAttribute="top" secondItem="isw-ne-0t2" secondAttribute="bottom" constant="20" id="ZJV-lZ-qdO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="J04-U3-Hdz" secondAttribute="leading" id="bCn-RS-ebY"/>
+                            <constraint firstItem="uAY-vE-wLW" firstAttribute="centerX" secondItem="6mH-UL-SqG" secondAttribute="centerX" id="ffd-rC-YqS"/>
+                            <constraint firstItem="J04-U3-Hdz" firstAttribute="top" secondItem="YAv-t7-iJC" secondAttribute="bottom" constant="8" id="rrz-mw-m74"/>
+                            <constraint firstItem="YAv-t7-iJC" firstAttribute="centerX" secondItem="6mH-UL-SqG" secondAttribute="centerX" id="yen-gc-RZx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKv-96-zVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="1836"/>
         </scene>
         <!--Basic Mode View Controller-->
         <scene sceneID="ItV-hM-u8i">
@@ -324,8 +546,108 @@ Frequency</string>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="-284.70764617691157"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="LdW-oK-kOO">
+            <objects>
+                <viewController id="KJm-ig-aAa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qGQ-ob-inR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kuw-dx-DZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3SZ-IY-eXC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcY-LJ-MLL">
+                                <rect key="frame" x="69" y="28" width="236" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="40D-Xo-SrM"/>
+                                    <constraint firstAttribute="width" constant="236" id="dcT-aw-MFX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utH-G6-awL">
+                                <rect key="frame" x="82" y="109" width="211" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="GFj-5i-vCM"/>
+                                    <constraint firstAttribute="width" constant="211" id="vmF-Zj-KOx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4K-KS-HGh">
+                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="65Y-PX-aWF"/>
+                                    <constraint firstAttribute="height" constant="60" id="Z5d-1j-Zdt"/>
+                                </constraints>
+                                <state key="normal" image="home.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ljN-8m-Qc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRb-xy-XGC">
+                                <rect key="frame" x="16" y="581" width="61" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="R8V-m3-m3n"/>
+                                    <constraint firstAttribute="height" constant="66" id="waV-NR-UWf"/>
+                                </constraints>
+                                <state key="normal" image="icons8-left-80.png"/>
+                                <connections>
+                                    <segue destination="iZu-MB-z2v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="zzU-xa-JGU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XEU-MV-uB6">
+                                <rect key="frame" x="16" y="149" width="343" height="456.5"/>
+                                <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="456.5" id="Bl8-Nd-sVe"/>
+                                    <constraint firstAttribute="width" constant="343" id="nZ8-JW-83U"/>
+                                </constraints>
+                                <mutableString key="text">In 'Advanced Mode', there are two sections you need to fill. The first section consists of four input fields, namely, type of filter, filter characteristics, ripple and number of poles. The second sections shows you the different stages for which you need to enter the capacitor and resistor values.
+
+You need to fill in these details and on pressing the calculate button, you get a circuit diagram and an AC sweep graph.
+
+You can use the back button (represented by an arrow) to go back to the previous page and the home button (represented by a house symbol) to return to the main menu.
+
+Enjoy using Active Filters Calculator!
+</mutableString>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kuw-dx-DZ0" firstAttribute="top" secondItem="V4K-KS-HGh" secondAttribute="bottom" constant="20" id="9Qu-pg-X97"/>
+                            <constraint firstItem="JcY-LJ-MLL" firstAttribute="top" secondItem="qGQ-ob-inR" secondAttribute="bottom" constant="8" id="H4c-IA-63j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V4K-KS-HGh" secondAttribute="trailing" id="Qug-Ze-GYd"/>
+                            <constraint firstItem="XEU-MV-uB6" firstAttribute="top" secondItem="utH-G6-awL" secondAttribute="bottom" constant="8" id="VZO-Mu-CkR"/>
+                            <constraint firstItem="utH-G6-awL" firstAttribute="centerX" secondItem="3SZ-IY-eXC" secondAttribute="centerX" id="ZvS-Xc-ufa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KRb-xy-XGC" secondAttribute="leading" id="lwX-Nb-kth"/>
+                            <constraint firstItem="Kuw-dx-DZ0" firstAttribute="top" secondItem="KRb-xy-XGC" secondAttribute="bottom" constant="20" id="oe7-GN-Yig"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEU-MV-uB6" secondAttribute="trailing" id="sYa-eR-JdO"/>
+                            <constraint firstItem="JcY-LJ-MLL" firstAttribute="centerX" secondItem="3SZ-IY-eXC" secondAttribute="centerX" id="u6M-rw-NL3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XEU-MV-uB6" secondAttribute="leading" id="wdC-Dz-6q6"/>
+                            <constraint firstItem="utH-G6-awL" firstAttribute="top" secondItem="JcY-LJ-MLL" secondAttribute="bottom" constant="12" id="xWc-Ua-yCe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPi-Jr-zxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8" y="1835.5322338830586"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="home.png" width="80" height="80"/>
         <image name="icons8-left-80.png" width="80" height="80"/>
+        <image name="info.png" width="80" height="80"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zzU-xa-JGU"/>
+        <segue reference="ljN-8m-Qc7"/>
+    </inferredMetricsTieBreakers>
 </document>
