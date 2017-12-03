@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2FA7611FD456D90030B0F1 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2FA7601FD456D90030B0F1 /* ResultsViewController.m */; };
+		CA2FA7651FD458C30030B0F1 /* Butterworth Low.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2FA7641FD458C30030B0F1 /* Butterworth Low.png */; };
 		CAE08EFA1FBC2801006DAD91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08EF91FBC2801006DAD91 /* main.m */; };
 		CAE08EFD1FBC2801006DAD91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08EFC1FBC2801006DAD91 /* AppDelegate.m */; };
 		CAE08F001FBC2801006DAD91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08EFF1FBC2801006DAD91 /* ViewController.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA2FA75F1FD456D90030B0F1 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		CA2FA7601FD456D90030B0F1 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		CA2FA7641FD458C30030B0F1 /* Butterworth Low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Butterworth Low.png"; path = "../Butterworth Low.png"; sourceTree = "<group>"; };
 		CAE08EF51FBC2801006DAD91 /* Active Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Active Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE08EF91FBC2801006DAD91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CAE08EFB1FBC2801006DAD91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,10 +125,13 @@
 				CAE32C021FD30FB000BCD21C /* BasicModeViewController.h */,
 				CAE32C031FD30FB000BCD21C /* BasicModeViewController.m */,
 				CAE08F011FBC2801006DAD91 /* Main.storyboard */,
+				CA2FA75F1FD456D90030B0F1 /* ResultsViewController.h */,
+				CA2FA7601FD456D90030B0F1 /* ResultsViewController.m */,
 				CAE32C0B1FD41DA000BCD21C /* DataModel.h */,
 				CAE32C0C1FD41DA000BCD21C /* DataModel.m */,
 				CAE32C091FD361FB00BCD21C /* home.png */,
 				CAE32C071FD35BCB00BCD21C /* info.png */,
+				CA2FA7641FD458C30030B0F1 /* Butterworth Low.png */,
 				CAE32C051FD3124D00BCD21C /* icons8-left-80.png */,
 				CAE08F041FBC2801006DAD91 /* Assets.xcassets */,
 				CAE08F061FBC2801006DAD91 /* LaunchScreen.storyboard */,
@@ -267,6 +275,7 @@
 			files = (
 				CAE08F081FBC2801006DAD91 /* LaunchScreen.storyboard in Resources */,
 				CAE32C081FD35BCB00BCD21C /* info.png in Resources */,
+				CA2FA7651FD458C30030B0F1 /* Butterworth Low.png in Resources */,
 				CAE32C0A1FD361FB00BCD21C /* home.png in Resources */,
 				CAE08F051FBC2801006DAD91 /* Assets.xcassets in Resources */,
 				CAE32C061FD3124D00BCD21C /* icons8-left-80.png in Resources */,
@@ -298,6 +307,7 @@
 				CAE08F001FBC2801006DAD91 /* ViewController.m in Sources */,
 				CAE32C0D1FD41DA000BCD21C /* DataModel.m in Sources */,
 				CAE08EFD1FBC2801006DAD91 /* AppDelegate.m in Sources */,
+				CA2FA7611FD456D90030B0F1 /* ResultsViewController.m in Sources */,
 				CAE32C041FD30FB000BCD21C /* BasicModeViewController.m in Sources */,
 				CAE08EFA1FBC2801006DAD91 /* main.m in Sources */,
 			);
