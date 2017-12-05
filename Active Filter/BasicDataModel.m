@@ -29,7 +29,7 @@
     }
 };
 
-//Determine the gain and the normalising factor depending on different parameters
+//Determine the gain depending on different parameters
 -(void) det_g {
     //Determine the value of gains for a Butterworth Filter
         //For 2 poles

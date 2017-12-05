@@ -962,6 +962,12 @@ Characteristics</string>
                             <constraint firstAttribute="leadingMargin" secondItem="Qdw-mT-C7f" secondAttribute="leading" id="xth-hd-sGA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FilterCharacteristics" destination="chU-wa-dYd" id="ZHh-SB-7y1"/>
+                        <outlet property="FilterType" destination="PUs-GW-0Tn" id="A05-Yg-yBb"/>
+                        <outlet property="Poles" destination="qAs-lC-Yot" id="1yd-df-BzA"/>
+                        <outlet property="Ripple" destination="GAF-cr-tGM" id="Gve-DS-pDP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNG-xN-fd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1234,9 +1240,13 @@ Characteristics</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wz-cg8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wz-cg8">
                                 <rect key="frame" x="136" y="603" width="175" height="48"/>
                                 <color key="backgroundColor" red="0.9756458402" green="0.63757961990000001" blue="0.3784518838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="XfE-AH-68K"/>
+                                    <constraint firstAttribute="width" constant="175" id="fSK-TT-RcO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1315,6 +1325,21 @@ Characteristics</string>
                             <constraint firstAttribute="trailingMargin" secondItem="4oQ-Sz-Xyg" secondAttribute="trailing" id="yf0-zd-tA7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CalcButton" destination="PgX-wz-cg8" id="EbJ-V1-6SJ"/>
+                        <outlet property="Stage1C" destination="XdR-Gv-jRm" id="r8x-Te-b7k"/>
+                        <outlet property="Stage1CMultiplier" destination="HKq-IO-LZp" id="YlP-t1-Jvc"/>
+                        <outlet property="Stage1R" destination="D7h-am-PtD" id="0Db-Bf-6to"/>
+                        <outlet property="Stage1RMultiplier" destination="rjB-rV-1gG" id="e3Y-KB-acJ"/>
+                        <outlet property="Stage2C" destination="HTY-Q0-UNy" id="Gqb-mz-0um"/>
+                        <outlet property="Stage2CMultiplier" destination="h1q-k3-5aA" id="v9s-vP-PXX"/>
+                        <outlet property="Stage2R" destination="K2f-YI-RCd" id="uVt-2k-9F7"/>
+                        <outlet property="Stage2RMultiplier" destination="Qbf-WX-C7U" id="TiU-bB-9Gg"/>
+                        <outlet property="Stage3C" destination="pg3-xf-vK9" id="4xj-Tz-rHc"/>
+                        <outlet property="Stage3CMultiplier" destination="4oQ-Sz-Xyg" id="fBe-LB-TDr"/>
+                        <outlet property="Stage3R" destination="nU5-F4-apu" id="Ja0-Bv-As2"/>
+                        <outlet property="Stage3RMultiplier" destination="XFP-nt-e6h" id="jPr-PE-lBW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hb-Wd-czj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
