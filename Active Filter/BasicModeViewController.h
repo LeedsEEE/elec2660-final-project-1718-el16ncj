@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataModel.h"
-#import "ResultsViewController.h"
+#import "BasicDataModel.h"
+#import "BasicResultsViewController.h"
 
 @interface BasicModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
 
@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *CutOff;
 @property (weak, nonatomic) IBOutlet UIPickerView *Frequency;
 
-@property (strong, nonatomic) DataModel *BasicObject;
+@property (strong, nonatomic) BasicDataModel *BasicObject;
 
 - (IBAction)CalcButton:(UIButton *)sender;
 
