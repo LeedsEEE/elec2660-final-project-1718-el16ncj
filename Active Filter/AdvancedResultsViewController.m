@@ -116,7 +116,7 @@
                 self.FilterLabel.text = [NSString stringWithFormat:@"Chebyshev 4-Pole   High-Pass Filter (2dB)"];
             }
         }
-
+    }
         else if(self.AdvancedObjectPassed.poles == 2) {
             
             if(self.AdvancedObjectPassed.characteristics == 0) {
@@ -135,6 +135,7 @@
                     self.FilterLabel.text = [NSString stringWithFormat:@"Chebyshev 6-Pole High-Pass Filter (0.5dB)"];
                 }
             }
+        
             
             else if(self.AdvancedObjectPassed.characteristics == 1 && self. AdvancedObjectPassed.ripple == 1) {
                 if(self.AdvancedObjectPassed.type == 0) {
@@ -145,8 +146,8 @@
                 }
             }
         }
-    }
-}
+    
+};
 
 -(void) displayCircuitDiagram {
     

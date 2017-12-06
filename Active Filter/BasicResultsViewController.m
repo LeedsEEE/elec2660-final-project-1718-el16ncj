@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   
+    
     NSLog(@"Freq1 = %f", self.BasicObjectPassed.freqf);
     NSLog(@"R1 = %f", self.BasicObjectPassed.R1);
     NSLog(@"C1 = %f", self.BasicObjectPassed.C1);
@@ -194,18 +194,18 @@
 
 - (void) setCalcLabelVal {
     
-    [self.Stage1RLabel.layer setCornerRadius:5.0];
-    [self.Stage1CLabel.layer setCornerRadius:5.0];
-    [self.Stage2RLabel.layer setCornerRadius:5.0];
-    [self.Stage2CLabel.layer setCornerRadius:5.0];
-    [self.Stage3RLabel.layer setCornerRadius:5.0];
-    [self.Stage3CLabel.layer setCornerRadius:5.0];
-    [self.Stage1RALabel.layer setCornerRadius:5.0];
-    [self.Stage1RBLabel.layer setCornerRadius:5.0];
-    [self.Stage2RALabel.layer setCornerRadius:5.0];
-    [self.Stage2RBLabel.layer setCornerRadius:5.0];
-    [self.Stage3RALabel.layer setCornerRadius:5.0];
-    [self.Stage3RBLabel.layer setCornerRadius:5.0];
+    [self.Stage1RLabel.layer setCornerRadius:0.5];
+    [self.Stage1CLabel.layer setCornerRadius:0.5];
+    [self.Stage2RLabel.layer setCornerRadius:0.5];
+    [self.Stage2CLabel.layer setCornerRadius:0.5];
+    [self.Stage3RLabel.layer setCornerRadius:0.5];
+    [self.Stage3CLabel.layer setCornerRadius:0.5];
+    [self.Stage1RALabel.layer setCornerRadius:0.5];
+    [self.Stage1RBLabel.layer setCornerRadius:0.5];
+    [self.Stage2RALabel.layer setCornerRadius:0.5];
+    [self.Stage2RBLabel.layer setCornerRadius:0.5];
+    [self.Stage3RALabel.layer setCornerRadius:0.5];
+    [self.Stage3RBLabel.layer setCornerRadius:0.5];
     
     if (self.BasicObjectPassed.poles == 2) {
         
