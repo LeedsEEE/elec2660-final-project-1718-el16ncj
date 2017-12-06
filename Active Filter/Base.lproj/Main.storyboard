@@ -1412,7 +1412,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="lZ6-Eq-BOb"/>
                                                     <constraint firstAttribute="width" constant="136" id="mkh-NA-9PH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1423,7 +1423,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="K65-1t-8bO"/>
                                                     <constraint firstAttribute="width" constant="136" id="zqc-ro-gLA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1434,7 +1434,7 @@ Type</string>
                                                     <constraint firstAttribute="width" constant="136" id="440-sk-KXc"/>
                                                     <constraint firstAttribute="height" constant="46" id="4zt-hC-DWN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1455,7 +1455,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="rPn-hk-5Lb"/>
                                                     <constraint firstAttribute="width" constant="136" id="wRs-sT-U9n"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1476,7 +1476,7 @@ Type</string>
                                                     <constraint firstAttribute="width" constant="136" id="erT-OA-wZI"/>
                                                     <constraint firstAttribute="height" constant="46" id="vXZ-cH-5m5"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1497,7 +1497,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="dAd-jy-0l6"/>
                                                     <constraint firstAttribute="width" constant="136" id="sJE-ML-SuA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1508,7 +1508,7 @@ Type</string>
                                                     <constraint firstAttribute="width" constant="136" id="ZOA-Zd-bWt"/>
                                                     <constraint firstAttribute="height" constant="46" id="qVM-uh-tuU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1549,7 +1549,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="o1d-V2-AsP"/>
                                                     <constraint firstAttribute="width" constant="136" id="xqU-lc-2ct"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1560,7 +1560,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="MDU-85-cDd"/>
                                                     <constraint firstAttribute="width" constant="136" id="ken-II-0eN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1571,7 +1571,7 @@ Type</string>
                                                     <constraint firstAttribute="width" constant="136" id="1cF-hq-nBm"/>
                                                     <constraint firstAttribute="height" constant="46" id="KWV-OY-Ibh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1582,7 +1582,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="2cv-RI-12p"/>
                                                     <constraint firstAttribute="width" constant="136" id="yZ9-82-Dpn"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1623,7 +1623,7 @@ Type</string>
                                                     <constraint firstAttribute="width" constant="136" id="Zwa-82-iRp"/>
                                                     <constraint firstAttribute="height" constant="46" id="kVj-xW-fDm"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1634,7 +1634,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="dcy-OZ-e1r"/>
                                                     <constraint firstAttribute="width" constant="136" id="zZK-wj-EIx"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1645,7 +1645,7 @@ Type</string>
                                                     <constraint firstAttribute="height" constant="46" id="5fo-U1-7XU"/>
                                                     <constraint firstAttribute="width" constant="136" id="64L-ic-qeG"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1656,7 +1656,7 @@ Type</string>
                                                     <constraint firstAttribute="width" constant="136" id="1dZ-gd-ewG"/>
                                                     <constraint firstAttribute="height" constant="46" id="CfN-gb-2dA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1783,6 +1783,21 @@ Type</string>
                         <outlet property="CircuitDiagram" destination="LSF-wb-S1r" id="23w-jN-akG"/>
                         <outlet property="FilterLabel" destination="flb-38-NzF" id="pLq-rf-LyM"/>
                         <outlet property="ScrollView" destination="vct-mB-22n" id="JaT-Nb-jbQ"/>
+                        <outlet property="Stage1CLabel" destination="fFg-ad-vXR" id="NYT-OD-DMA"/>
+                        <outlet property="Stage1FLabel" destination="y7M-lC-kbY" id="1in-nM-0ou"/>
+                        <outlet property="Stage1RALabel" destination="WGg-Nh-FC0" id="IE6-TC-gc9"/>
+                        <outlet property="Stage1RBLabel" destination="8T3-I3-OnY" id="00b-oD-Vn3"/>
+                        <outlet property="Stage1RLabel" destination="z4F-3S-ATg" id="aai-MU-Swq"/>
+                        <outlet property="Stage2CLabel" destination="NcO-zV-ma1" id="jRu-i9-fT0"/>
+                        <outlet property="Stage2FLabel" destination="tSn-1g-0rC" id="9a6-XE-eCV"/>
+                        <outlet property="Stage2RALabel" destination="HUL-To-uWe" id="FT5-fh-TPJ"/>
+                        <outlet property="Stage2RBLabel" destination="tbm-dM-zws" id="Kav-HU-aTg"/>
+                        <outlet property="Stage2RLabel" destination="Kx1-0Y-EkO" id="axB-Ar-spB"/>
+                        <outlet property="Stage3CLabel" destination="hKb-nt-B0r" id="6Lf-Rz-E3W"/>
+                        <outlet property="Stage3FLabel" destination="AGc-TE-s4u" id="HXc-rm-NBl"/>
+                        <outlet property="Stage3RALabel" destination="FBK-X2-W6p" id="NTy-hR-8nX"/>
+                        <outlet property="Stage3RBLabel" destination="aLn-dk-6zK" id="kSL-WI-yax"/>
+                        <outlet property="Stage3RLabel" destination="uiz-D2-iut" id="VqR-AY-a9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bV-dv-cLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1797,8 +1812,8 @@ Type</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9Ph-lf-XGZ"/>
-        <segue reference="LA6-S2-48S"/>
-        <segue reference="SUR-Ni-mFg"/>
         <segue reference="x4N-34-JlC"/>
+        <segue reference="NzK-AS-qeS"/>
+        <segue reference="SUR-Ni-mFg"/>
     </inferredMetricsTieBreakers>
 </document>

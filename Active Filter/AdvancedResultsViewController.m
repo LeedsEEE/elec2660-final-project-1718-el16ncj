@@ -41,7 +41,7 @@
     self.ScrollView.delegate = self;
 
     (void)self.displayCircuitDiagram;
-
+    (void)self.setCalcLabelVal;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -190,6 +190,738 @@
     
     return self.CircuitDiagram;
     
+};
+
+- (void) setCalcLabelVal {
+    
+    if (self.AdvancedObjectPassed.poles == 2) {
+        
+    //For Stage 1 R
+    if(self.AdvancedObjectPassed.R1 >= 1e9) {
+        
+        self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f GΩ", (self.AdvancedObjectPassed.R1/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.R1 >= 1e6) {
+        
+         self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f MΩ", (self.AdvancedObjectPassed.R1/1e6)];
+    }
+   
+    else if(self.AdvancedObjectPassed.R1 >= 1e3) {
+        
+        self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.AdvancedObjectPassed.R1/1e3)];
+    }
+
+    else {
+        
+        self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.AdvancedObjectPassed.R1)];
+    }
+    
+    // For Stage 2 R
+    
+    if(self.AdvancedObjectPassed.R2 >= 1e9) {
+        
+        self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f GΩ", (self.AdvancedObjectPassed.R2/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.R2 >= 1e6) {
+        
+        self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f MΩ", (self.AdvancedObjectPassed.R2/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.R2 >= 1e3) {
+        
+        self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.AdvancedObjectPassed.R2/1e3)];
+    }
+    
+    else {
+        
+        self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.AdvancedObjectPassed.R2)];
+    }
+
+    
+    // For Stage 3 R
+    
+    if(self.AdvancedObjectPassed.R3 >= 1e9) {
+        
+        self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f GΩ", (self.AdvancedObjectPassed.R3/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.R3 >= 1e6) {
+        
+        self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f MΩ", (self.AdvancedObjectPassed.R3/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.R3 >= 1e3) {
+        
+        self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.AdvancedObjectPassed.R3/1e3)];
+    }
+    
+    else {
+        
+        self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.AdvancedObjectPassed.R3)];
+    }
+
+   // For Stage 1 RA
+    
+    if(self.AdvancedObjectPassed.RA1 >= 1e9) {
+        
+        self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f GΩ", (self.AdvancedObjectPassed.RA1/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RA1 >= 1e6) {
+        
+        self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f MΩ", (self.AdvancedObjectPassed.RA1/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RA1 >= 1e3) {
+        
+        self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f kΩ", (self.AdvancedObjectPassed.RA1/1e3)];
+    }
+    
+    else {
+        
+        self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.AdvancedObjectPassed.RA1)];
+    }
+
+    // For Stage 2 RA
+    
+    if(self.AdvancedObjectPassed.RA2 >= 1e9) {
+        
+        self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f GΩ", (self.AdvancedObjectPassed.RA2/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RA2 >= 1e6) {
+        
+        self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f MΩ", (self.AdvancedObjectPassed.RA2/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RA2 >= 1e3) {
+        
+        self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f kΩ", (self.AdvancedObjectPassed.RA2/1e3)];
+    }
+    
+    else {
+        
+        self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.AdvancedObjectPassed.RA2)];
+    }
+
+    
+    // For Stage 3 RA
+    
+    if(self.AdvancedObjectPassed.RA3 >= 1e9) {
+        
+        self.Stage3RALabel.text = [NSString stringWithFormat:@"RA = %.2f GΩ", (self.AdvancedObjectPassed.RA3/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RA3 >= 1e6) {
+        
+        self.Stage3RALabel.text = [NSString stringWithFormat:@"RA = %.2f MΩ", (self.AdvancedObjectPassed.RA3/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RA3 >= 1e3) {
+        
+        self.Stage3RALabel.text = [NSString stringWithFormat:@"RA = %.2f kΩ", (self.AdvancedObjectPassed.RA3/1e3)];
+    }
+    
+    else {
+        
+        self.Stage3RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.AdvancedObjectPassed.RA3)];
+    }
+
+    // For Stage 1 RB
+    
+    if(self.AdvancedObjectPassed.RB1 >= 1e9) {
+        
+        self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f GΩ", (self.AdvancedObjectPassed.RB1/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RB1 >= 1e6) {
+        
+        self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f MΩ", (self.AdvancedObjectPassed.RB1/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RB1 >= 1e3) {
+        
+        self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f kΩ", (self.AdvancedObjectPassed.RB1/1e3)];
+    }
+    
+    else {
+        
+        self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.AdvancedObjectPassed.RB1)];
+    }
+    
+    // For Stage 2 RB
+    
+    if(self.AdvancedObjectPassed.RB2 >= 1e9) {
+        
+        self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f GΩ", (self.AdvancedObjectPassed.RB2/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RB2 >= 1e6) {
+        
+        self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f MΩ", (self.AdvancedObjectPassed.RB2/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RB2 >= 1e3) {
+        
+        self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f kΩ", (self.AdvancedObjectPassed.RB2/1e3)];
+    }
+    
+    else {
+        
+        self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.AdvancedObjectPassed.RB2)];
+    }
+    
+    // For Stage 3 RB
+    
+    if(self.AdvancedObjectPassed.RB3 >= 1e9) {
+        
+        self.Stage3RBLabel.text = [NSString stringWithFormat:@"RB = %.2f GΩ", (self.AdvancedObjectPassed.RB3/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RB3 >= 1e6) {
+        
+        self.Stage3RBLabel.text = [NSString stringWithFormat:@"RB = %.2f MΩ", (self.AdvancedObjectPassed.RB3/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.RB3 >= 1e3) {
+        
+        self.Stage3RBLabel.text = [NSString stringWithFormat:@"RB = %.2f kΩ", (self.AdvancedObjectPassed.RB3/1e3)];
+    }
+    
+    else {
+        
+        self.Stage3RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.AdvancedObjectPassed.RB3)];
+    }
+
+    // For Stage 1 C
+    
+    if(self.AdvancedObjectPassed.C1 >= 1e-6) {
+        
+        self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f µF", (self.AdvancedObjectPassed.C1/1e-6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.C1 >= 1e-9) {
+        
+        self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f nF", (self.AdvancedObjectPassed.C1/1e-9)];
+    }
+    
+    else {
+        
+        self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.AdvancedObjectPassed.C1/1e-12)];
+    }
+
+    // For Stage 2 C
+    
+    if(self.AdvancedObjectPassed.C2 >= 1e-6) {
+        
+        self.Stage2CLabel.text = [NSString stringWithFormat:@"C = %.2f µF", (self.AdvancedObjectPassed.C2/1e-6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.C2 >= 1e-9) {
+        
+        self.Stage2CLabel.text = [NSString stringWithFormat:@"C = %.2f nF", (self.AdvancedObjectPassed.C2/1e-9)];
+    }
+    
+    else {
+        
+        self.Stage2CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.AdvancedObjectPassed.C2/1e-12)];
+    }
+
+    
+    // For Stage 3 C
+    
+    if(self.AdvancedObjectPassed.C3 >= 1e-6) {
+        
+        self.Stage3CLabel.text = [NSString stringWithFormat:@"C = %.2f µF", (self.AdvancedObjectPassed.C3/1e-6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.C3 >= 1e-9) {
+        
+        self.Stage3CLabel.text = [NSString stringWithFormat:@"C = %.2f nF", (self.AdvancedObjectPassed.C3/1e-9)];
+    }
+    
+    else {
+        
+        self.Stage3CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.AdvancedObjectPassed.C3/1e-12)];
+    }
+
+    // For Stage 1 F
+    
+    if(self.AdvancedObjectPassed.freq1 >= 1e9) {
+        
+        self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f GHz", (self.AdvancedObjectPassed.freq1/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.freq1 >= 1e6) {
+        
+        self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f MHz", (self.AdvancedObjectPassed.freq1/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.freq1 >= 1e3) {
+        
+        self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f kHz", (self.AdvancedObjectPassed.freq1/1e3)];
+    }
+    
+    else {
+        
+        self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f Hz", (self.AdvancedObjectPassed.freq1)];
+    }
+
+    // For Stage 2 F
+    
+    if(self.AdvancedObjectPassed.freq2 >= 1e9) {
+        
+        self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f GHz", (self.AdvancedObjectPassed.freq2/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.freq2 >= 1e6) {
+        
+        self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f MHz", (self.AdvancedObjectPassed.freq2/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.freq2 >= 1e3) {
+        
+        self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f kHz", (self.AdvancedObjectPassed.freq2/1e3)];
+    }
+    
+    else {
+        
+        self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f Hz", (self.AdvancedObjectPassed.freq2)];
+    }
+
+    // For Stage 3 F
+    
+    if(self.AdvancedObjectPassed.freq3 >= 1e9) {
+        
+        self.Stage3FLabel.text = [NSString stringWithFormat:@"Fc = %.2f GHz", (self.AdvancedObjectPassed.freq3/1e9)];
+    }
+    
+    else if(self.AdvancedObjectPassed.freq3 >= 1e6) {
+        
+        self.Stage3FLabel.text = [NSString stringWithFormat:@"Fc = %.2f MHz", (self.AdvancedObjectPassed.freq3/1e6)];
+    }
+    
+    else if(self.AdvancedObjectPassed.freq3 >= 1e3) {
+        
+        self.Stage3FLabel.text = [NSString stringWithFormat:@"Fc = %.2f kHz", (self.AdvancedObjectPassed.freq3/1e3)];
+    }
+    
+    else {
+        
+        self.Stage3FLabel.text = [NSString stringWithFormat:@"Fc = %.2f Hz", (self.AdvancedObjectPassed.freq3)];
+    }
+    }
+    
+    //FOr Poles - 4
+    
+    else if (self.AdvancedObjectPassed.poles == 1) {
+        
+        //For Stage 1 R
+        if(self.AdvancedObjectPassed.R1 >= 1e9) {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f GΩ", (self.AdvancedObjectPassed.R1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.R1 >= 1e6) {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f MΩ", (self.AdvancedObjectPassed.R1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.R1 >= 1e3) {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.AdvancedObjectPassed.R1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.AdvancedObjectPassed.R1)];
+        }
+        
+        // For Stage 2 R
+        
+        if(self.AdvancedObjectPassed.R2 >= 1e9) {
+            
+            self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f GΩ", (self.AdvancedObjectPassed.R2/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.R2 >= 1e6) {
+            
+            self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f MΩ", (self.AdvancedObjectPassed.R2/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.R2 >= 1e3) {
+            
+            self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.AdvancedObjectPassed.R2/1e3)];
+        }
+        
+        else {
+            
+            self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.AdvancedObjectPassed.R2)];
+        }
+        
+        
+        // For Stage 3 R
+            
+        self.Stage3RLabel.text = @"N/A";
+        [self.Stage3RLabel setAlpha:0.6];
+
+        
+        // For Stage 1 RA
+        
+        if(self.AdvancedObjectPassed.RA1 >= 1e9) {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f GΩ", (self.AdvancedObjectPassed.RA1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RA1 >= 1e6) {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f MΩ", (self.AdvancedObjectPassed.RA1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RA1 >= 1e3) {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f kΩ", (self.AdvancedObjectPassed.RA1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.AdvancedObjectPassed.RA1)];
+        }
+        
+        // For Stage 2 RA
+        
+        if(self.AdvancedObjectPassed.RA2 >= 1e9) {
+            
+            self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f GΩ", (self.AdvancedObjectPassed.RA2/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RA2 >= 1e6) {
+            
+            self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f MΩ", (self.AdvancedObjectPassed.RA2/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RA2 >= 1e3) {
+            
+            self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f kΩ", (self.AdvancedObjectPassed.RA2/1e3)];
+        }
+        
+        else {
+            
+            self.Stage2RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.AdvancedObjectPassed.RA2)];
+        }
+        
+        
+        // For Stage 3 RA
+        
+        self.Stage3RALabel.text = @"N/A";
+        [self.Stage3RALabel setAlpha:0.6];
+
+        
+        // For Stage 1 RB
+        
+        if(self.AdvancedObjectPassed.RB1 >= 1e9) {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f GΩ", (self.AdvancedObjectPassed.RB1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RB1 >= 1e6) {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f MΩ", (self.AdvancedObjectPassed.RB1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RB1 >= 1e3) {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f kΩ", (self.AdvancedObjectPassed.RB1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.AdvancedObjectPassed.RB1)];
+        }
+        
+        // For Stage 2 RB
+        
+        if(self.AdvancedObjectPassed.RB2 >= 1e9) {
+            
+            self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f GΩ", (self.AdvancedObjectPassed.RB2/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RB2 >= 1e6) {
+            
+            self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f MΩ", (self.AdvancedObjectPassed.RB2/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RB2 >= 1e3) {
+            
+            self.Stage2RBLabel.text = [NSString stringWithFormat:@"RB = %.2f kΩ", (self.AdvancedObjectPassed.RB2/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.AdvancedObjectPassed.RB2)];
+        }
+        
+        // For Stage 3 RB
+            
+            self.Stage3RBLabel.text = @"N/A";
+            [self.Stage3RBLabel setAlpha:0.6];
+
+        
+        // For Stage 1 C
+        
+        if(self.AdvancedObjectPassed.C1 >= 1e-6) {
+            
+            self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f µF", (self.AdvancedObjectPassed.C1/1e-6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.C1 >= 1e-9) {
+            
+            self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f nF", (self.AdvancedObjectPassed.C1/1e-9)];
+        }
+        
+        else {
+            
+            self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.AdvancedObjectPassed.C1/1e-12)];
+        }
+        
+        // For Stage 2 C
+        
+        if(self.AdvancedObjectPassed.C2 >= 1e-6) {
+            
+            self.Stage2CLabel.text = [NSString stringWithFormat:@"C = %.2f µF", (self.AdvancedObjectPassed.C2/1e-6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.C2 >= 1e-9) {
+            
+            self.Stage2CLabel.text = [NSString stringWithFormat:@"C = %.2f nF", (self.AdvancedObjectPassed.C2/1e-9)];
+        }
+        
+        else {
+            
+            self.Stage2CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.AdvancedObjectPassed.C2/1e-12)];
+        }
+        
+        
+        // For Stage 3 C
+        
+            self.Stage3CLabel.text = @"N/A";
+            [self.Stage3CLabel setAlpha:0.6];
+
+        
+        // For Stage 1 F
+        
+        if(self.AdvancedObjectPassed.freq1 >= 1e9) {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f GHz", (self.AdvancedObjectPassed.freq1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.freq1 >= 1e6) {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f MHz", (self.AdvancedObjectPassed.freq1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.freq1 >= 1e3) {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f kHz", (self.AdvancedObjectPassed.freq1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f Hz", (self.AdvancedObjectPassed.freq1)];
+        }
+        
+        // For Stage 2 F
+        
+        if(self.AdvancedObjectPassed.freq2 >= 1e9) {
+            
+            self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f GHz", (self.AdvancedObjectPassed.freq2/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.freq2 >= 1e6) {
+            
+            self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f MHz", (self.AdvancedObjectPassed.freq2/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.freq2 >= 1e3) {
+            
+            self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f kHz", (self.AdvancedObjectPassed.freq2/1e3)];
+        }
+        
+        else {
+            
+            self.Stage2FLabel.text = [NSString stringWithFormat:@"Fc = %.2f Hz", (self.AdvancedObjectPassed.freq2)];
+        }
+        
+        // For Stage 3 F
+        
+            self.Stage3FLabel.text = @"N/A";
+            [self.Stage3FLabel setAlpha:0.6];
+    }
+    
+    //For Poles - 2
+    
+    else {
+        
+        //For Stage 1 R
+        if(self.AdvancedObjectPassed.R1 >= 1e9) {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f GΩ", (self.AdvancedObjectPassed.R1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.R1 >= 1e6) {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f MΩ", (self.AdvancedObjectPassed.R1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.R1 >= 1e3) {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.AdvancedObjectPassed.R1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.AdvancedObjectPassed.R1)];
+        }
+        
+        // For Stage 2 R
+        
+            self.Stage2RLabel.text =@"N/A";
+            [self.Stage2RLabel setAlpha:0.6];
+        
+        
+        // For Stage 3 R
+        
+            self.Stage3RLabel.text = @"N/A";
+            [self.Stage3RLabel setAlpha:0.6];
+        
+        
+        // For Stage 1 RA
+        
+        if(self.AdvancedObjectPassed.RA1 >= 1e9) {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f GΩ", (self.AdvancedObjectPassed.RA1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RA1 >= 1e6) {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f MΩ", (self.AdvancedObjectPassed.RA1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RA1 >= 1e3) {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f kΩ", (self.AdvancedObjectPassed.RA1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.AdvancedObjectPassed.RA1)];
+        }
+        
+        // For Stage 2 RA
+        
+            self.Stage2RALabel.text = @"N/A";
+            [self.Stage2RALabel setAlpha:0.6];
+        
+        // For Stage 3 RA
+        
+            self.Stage3RALabel.text = @"N/A";
+            [self.Stage3RALabel setAlpha:0.6];
+        
+        
+        // For Stage 1 RB
+        
+        if(self.AdvancedObjectPassed.RB1 >= 1e9) {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f GΩ", (self.AdvancedObjectPassed.RB1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RB1 >= 1e6) {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f MΩ", (self.AdvancedObjectPassed.RB1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.RB1 >= 1e3) {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f kΩ", (self.AdvancedObjectPassed.RB1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.AdvancedObjectPassed.RB1)];
+        }
+        
+        // For Stage 2 RB
+
+        self.Stage2RBLabel.text = @"N/A";
+        [self.Stage2RBLabel setAlpha:0.6];
+        // For Stage 3 RB
+        
+        self.Stage3RBLabel.text = @"N/A";
+        [self.Stage3RBLabel setAlpha:0.6];
+        
+        
+        // For Stage 1 C
+        
+        if(self.AdvancedObjectPassed.C1 >= 1e-6) {
+            
+            self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f µF", (self.AdvancedObjectPassed.C1/1e-6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.C1 >= 1e-9) {
+            
+            self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f nF", (self.AdvancedObjectPassed.C1/1e-9)];
+        }
+        
+        else {
+            
+            self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.AdvancedObjectPassed.C1/1e-12)];
+        }
+        
+        // For Stage 2 C
+        
+        self.Stage2CLabel.text = @"N/A";
+        [self.Stage2CLabel setAlpha:0.6];
+        
+        // For Stage 3 C
+        
+        self.Stage3CLabel.text = @"N/A";
+        [self.Stage3CLabel setAlpha:0.6];
+        
+        
+        // For Stage 1 F
+        
+        if(self.AdvancedObjectPassed.freq1 >= 1e9) {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f GHz", (self.AdvancedObjectPassed.freq1/1e9)];
+        }
+        
+        else if(self.AdvancedObjectPassed.freq1 >= 1e6) {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f MHz", (self.AdvancedObjectPassed.freq1/1e6)];
+        }
+        
+        else if(self.AdvancedObjectPassed.freq1 >= 1e3) {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f kHz", (self.AdvancedObjectPassed.freq1/1e3)];
+        }
+        
+        else {
+            
+            self.Stage1FLabel.text = [NSString stringWithFormat:@"Fc = %.2f Hz", (self.AdvancedObjectPassed.freq1)];
+        }
+        
+        // For Stage 2 F
+
+        self.Stage2FLabel.text = @"N/A";
+        [self.Stage2FLabel setAlpha:0.6];
+        
+        // For Stage 3 F
+        
+        self.Stage3FLabel.text = @"N/A";
+        [self.Stage3FLabel setAlpha:0.6];
+    }
 };
 
 @end
