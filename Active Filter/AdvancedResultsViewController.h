@@ -10,8 +10,15 @@
 #import "AdvancedDataModel.h"
 
 
-@interface AdvancedResultsViewController : UIViewController
+@interface AdvancedResultsViewController : UIViewController <UIScrollViewDelegate>
 
 @property (strong, nonatomic) AdvancedDataModel *AdvancedObjectPassed;
+
+@property (weak, nonatomic) IBOutlet UILabel *FilterLabel;
+@property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *CircuitDiagram;
+
+-(void) setFilterLabelVal;
+-(void) displayCircuitDiagram;
 
 @end
