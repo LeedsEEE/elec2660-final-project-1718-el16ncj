@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1E30271FD8092D0020A11C /* AdvancedResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E30251FD8092D0020A11C /* AdvancedResultsViewController.m */; };
 		CA2FA7611FD456D90030B0F1 /* BasicResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */; };
 		CA74766B1FD692F600B83430 /* low-pass 6 pole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476641FD692F600B83430 /* low-pass 6 pole.png */; };
 		CA74766C1FD692F600B83430 /* low-pass 4 pole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476651FD692F600B83430 /* low-pass 4 pole.png */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA1E30251FD8092D0020A11C /* AdvancedResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedResultsViewController.m; sourceTree = "<group>"; };
+		CA1E30261FD8092D0020A11C /* AdvancedResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedResultsViewController.h; sourceTree = "<group>"; };
 		CA2FA75F1FD456D90030B0F1 /* BasicResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicResultsViewController.h; sourceTree = "<group>"; };
 		CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicResultsViewController.m; sourceTree = "<group>"; };
 		CA7476641FD692F600B83430 /* low-pass 6 pole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "low-pass 6 pole.png"; sourceTree = "<group>"; };
@@ -115,6 +118,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1E30241FD808D40020A11C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA7476711FD6E83B00B83430 /* go front.png */,
+				CA7476721FD6E83B00B83430 /* go back.png */,
+				CA7476641FD692F600B83430 /* low-pass 6 pole.png */,
+				CA7476651FD692F600B83430 /* low-pass 4 pole.png */,
+				CA7476661FD692F600B83430 /* low-pass 2 pole.png */,
+				CA7476671FD692F600B83430 /* high-pass 6 pole.png */,
+				CA7476681FD692F600B83430 /* high-pass 4 pole.png */,
+				CA7476691FD692F600B83430 /* high-pass 2 pole.png */,
+				CAE32C091FD361FB00BCD21C /* home.png */,
+				CAE32C071FD35BCB00BCD21C /* info.png */,
+				CAE32C051FD3124D00BCD21C /* icons8-left-80.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		CAE08EEC1FBC2801006DAD91 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +159,7 @@
 		CAE08EF71FBC2801006DAD91 /* Active Filter */ = {
 			isa = PBXGroup;
 			children = (
+				CA1E30241FD808D40020A11C /* Images */,
 				CAE08EFB1FBC2801006DAD91 /* AppDelegate.h */,
 				CAE08EFC1FBC2801006DAD91 /* AppDelegate.m */,
 				CAE08EFE1FBC2801006DAD91 /* ViewController.h */,
@@ -147,23 +169,14 @@
 				CAE08F011FBC2801006DAD91 /* Main.storyboard */,
 				CA7476751FD6EB4900B83430 /* AdvancedModeViewController.h */,
 				CA7476761FD6EB4900B83430 /* AdvancedModeViewController.m */,
+				CA1E30261FD8092D0020A11C /* AdvancedResultsViewController.h */,
+				CA1E30251FD8092D0020A11C /* AdvancedResultsViewController.m */,
 				CA7476781FD6F2F000B83430 /* AdvancedDataModel.h */,
 				CA7476791FD6F2F000B83430 /* AdvancedDataModel.m */,
-				CA7476711FD6E83B00B83430 /* go front.png */,
-				CA7476721FD6E83B00B83430 /* go back.png */,
 				CA2FA75F1FD456D90030B0F1 /* BasicResultsViewController.h */,
 				CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */,
 				CAE32C0B1FD41DA000BCD21C /* BasicDataModel.h */,
 				CAE32C0C1FD41DA000BCD21C /* BasicDataModel.m */,
-				CA7476641FD692F600B83430 /* low-pass 6 pole.png */,
-				CA7476651FD692F600B83430 /* low-pass 4 pole.png */,
-				CA7476661FD692F600B83430 /* low-pass 2 pole.png */,
-				CA7476671FD692F600B83430 /* high-pass 6 pole.png */,
-				CA7476681FD692F600B83430 /* high-pass 4 pole.png */,
-				CA7476691FD692F600B83430 /* high-pass 2 pole.png */,
-				CAE32C091FD361FB00BCD21C /* home.png */,
-				CAE32C071FD35BCB00BCD21C /* info.png */,
-				CAE32C051FD3124D00BCD21C /* icons8-left-80.png */,
 				CAE08F041FBC2801006DAD91 /* Assets.xcassets */,
 				CAE08F061FBC2801006DAD91 /* LaunchScreen.storyboard */,
 				CAE08F091FBC2801006DAD91 /* Info.plist */,
@@ -347,6 +360,7 @@
 				CAE08EFD1FBC2801006DAD91 /* AppDelegate.m in Sources */,
 				CA2FA7611FD456D90030B0F1 /* BasicResultsViewController.m in Sources */,
 				CA7476771FD6EB4900B83430 /* AdvancedModeViewController.m in Sources */,
+				CA1E30271FD8092D0020A11C /* AdvancedResultsViewController.m in Sources */,
 				CAE32C041FD30FB000BCD21C /* BasicModeViewController.m in Sources */,
 				CAE08EFA1FBC2801006DAD91 /* main.m in Sources */,
 				CA74767A1FD6F2F000B83430 /* AdvancedDataModel.m in Sources */,

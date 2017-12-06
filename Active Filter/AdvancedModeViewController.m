@@ -60,6 +60,28 @@
     self.Stage2C.delegate = self;
     self.Stage3R.delegate = self;
     self.Stage3C.delegate = self;
+
+    [self.Ripple setUserInteractionEnabled:NO];
+    [self.Ripple setAlpha:0.6];
+    
+    [self.Stage2R setUserInteractionEnabled:NO];
+    [self.Stage2R setAlpha:0.6];
+    [self.Stage2RMultiplier setUserInteractionEnabled:NO];
+    [self.Stage2RMultiplier setAlpha:0.6];
+    [self.Stage3R setUserInteractionEnabled:NO];
+    [self.Stage3R setAlpha:0.6];
+    [self.Stage3RMultiplier setUserInteractionEnabled:NO];
+    [self.Stage3RMultiplier setAlpha:0.6];
+    
+    [self.Stage2C setUserInteractionEnabled:NO];
+    [self.Stage2C setAlpha:0.6];
+    [self.Stage2CMultiplier setUserInteractionEnabled:NO];
+    [self.Stage2CMultiplier setAlpha:0.6];
+    [self.Stage3C setUserInteractionEnabled:NO];
+    [self.Stage3C setAlpha:0.6];
+    [self.Stage3CMultiplier setUserInteractionEnabled:NO];
+    [self.Stage3CMultiplier setAlpha:0.6];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -196,6 +218,85 @@ numberOfRowsInComponent:(NSInteger)component {
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
+    if([self.FilterCharacteristics selectedRowInComponent:0] == 0) {
+        
+        [self.Ripple setUserInteractionEnabled:NO];
+        [self.Ripple setAlpha:0.6];
+        
+    }
+    
+    else {
+        
+        [self.Ripple setUserInteractionEnabled:YES];
+        [self.Ripple setAlpha:1];
+
+        
+    }
+    
+    if([self.Poles selectedRowInComponent:0] == 0) {
+        
+        [self.Stage2R setUserInteractionEnabled:NO];
+        [self.Stage2R setAlpha:0.6];
+        [self.Stage2RMultiplier setUserInteractionEnabled:NO];
+        [self.Stage2RMultiplier setAlpha:0.6];
+        [self.Stage3R setUserInteractionEnabled:NO];
+        [self.Stage3R setAlpha:0.6];
+        [self.Stage3RMultiplier setUserInteractionEnabled:NO];
+        [self.Stage3RMultiplier setAlpha:0.6];
+
+        [self.Stage2C setUserInteractionEnabled:NO];
+        [self.Stage2C setAlpha:0.6];
+        [self.Stage2CMultiplier setUserInteractionEnabled:NO];
+        [self.Stage2CMultiplier setAlpha:0.6];
+        [self.Stage3C setUserInteractionEnabled:NO];
+        [self.Stage3C setAlpha:0.6];
+        [self.Stage3CMultiplier setUserInteractionEnabled:NO];
+        [self.Stage3CMultiplier setAlpha:0.6];
+    }
+    
+    else if([self.Poles selectedRowInComponent:0] == 1) {
+        
+        [self.Stage2R setUserInteractionEnabled:YES];
+        [self.Stage2R setAlpha:1.0];
+        [self.Stage2RMultiplier setUserInteractionEnabled:YES];
+        [self.Stage2RMultiplier setAlpha:1.0];
+        [self.Stage3R setUserInteractionEnabled:NO];
+        [self.Stage3R setAlpha:0.6];
+        [self.Stage3RMultiplier setUserInteractionEnabled:NO];
+        [self.Stage3RMultiplier setAlpha:0.6];
+        
+        [self.Stage2C setUserInteractionEnabled:YES];
+        [self.Stage2C setAlpha:1.0];
+        [self.Stage2CMultiplier setUserInteractionEnabled:YES];
+        [self.Stage2CMultiplier setAlpha:1.0];
+        [self.Stage3C setUserInteractionEnabled:NO];
+        [self.Stage3C setAlpha:0.6];
+        [self.Stage3CMultiplier setUserInteractionEnabled:NO];
+        [self.Stage3CMultiplier setAlpha:0.6];
+    }
+    
+    else if([self.Poles selectedRowInComponent:0] == 2) {
+        
+        [self.Stage2R setUserInteractionEnabled:YES];
+        [self.Stage2R setAlpha:1.0];
+        [self.Stage2RMultiplier setUserInteractionEnabled:YES];
+        [self.Stage2RMultiplier setAlpha:1.0];
+        [self.Stage3R setUserInteractionEnabled:YES];
+        [self.Stage3R setAlpha:1.0];
+        [self.Stage3RMultiplier setUserInteractionEnabled:YES];
+        [self.Stage3RMultiplier setAlpha:1.0];
+        
+        [self.Stage2C setUserInteractionEnabled:YES];
+        [self.Stage2C setAlpha:1.0];
+        [self.Stage2CMultiplier setUserInteractionEnabled:YES];
+        [self.Stage2CMultiplier setAlpha:1.0];
+        [self.Stage3C setUserInteractionEnabled:YES];
+        [self.Stage3C setAlpha:1.0];
+        [self.Stage3CMultiplier setUserInteractionEnabled:YES];
+        [self.Stage3CMultiplier setAlpha:1.0];
+    }
+
+    
     self.AdvancedObject.type = (int)[self.FilterType selectedRowInComponent:0];
     self.AdvancedObject.characteristics = (int)[self.FilterCharacteristics selectedRowInComponent:0];
     self.AdvancedObject.ripple = (int)[self.Ripple selectedRowInComponent:0];
@@ -209,15 +310,23 @@ numberOfRowsInComponent:(NSInteger)component {
     self.AdvancedObject.C3M = (int)[self.Stage3CMultiplier selectedRowInComponent:0];
 };
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if([[segue identifier] isEqualToString:@"AdvancedCalc"]) {
+        
+        AdvancedResultsViewController *destinationViewController = [segue destinationViewController];
+        
+        destinationViewController.AdvancedObjectPassed = self.AdvancedObject;
+        
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (IBAction)CalcButton:(UIButton *)sender {
     
