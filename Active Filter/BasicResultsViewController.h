@@ -14,14 +14,25 @@
 @property (strong, nonatomic) BasicDataModel *BasicObjectPassed;
 
 @property (weak, nonatomic) IBOutlet UILabel *FilterTypeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *ResValLabel;
-@property (weak, nonatomic) IBOutlet UILabel *CapValLabel;
-@property (weak, nonatomic) IBOutlet UILabel *GainResValLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *CircuitDiagram;
 @property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
 
+@property (weak, nonatomic) IBOutlet UILabel *Stage1RLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage1CLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage1RALabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage1RBLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *Stage2RLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage2CLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage2RALabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage2RBLabel;
 
--(void) setLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage3RLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage3CLabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage3RALabel;
+@property (weak, nonatomic) IBOutlet UILabel *Stage3RBLabel;
+
+-(void) setFilterLabelVal;
 -(void) displayCircuitDiagram;
+-(void) setCalcLabelVal;
 @end
