@@ -19,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrH-Td-oct">
@@ -49,7 +49,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="OAX-QM-hHM" kind="show" id="Oxz-pu-kse"/>
+                                    <segue destination="3O4-Pg-svM" kind="show" id="bTa-xs-KxY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxG-SZ-teT">
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDh-QR-6QP">
-                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <rect key="frame" x="309" y="1030" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dUq-jW-byB"/>
                                     <constraint firstAttribute="width" constant="50" id="tOw-7i-4sY"/>
@@ -786,576 +786,533 @@ Enjoy using Active Filters Calculator!
             <point key="canvasLocation" x="514" y="1836"/>
         </scene>
         <!--Advanced Mode View Controller-->
-        <scene sceneID="AZT-4b-tPD">
+        <scene sceneID="e7g-Oq-dWc">
             <objects>
-                <viewController id="OAX-QM-hHM" customClass="AdvancedModeViewController" sceneMemberID="viewController">
+                <viewController id="3O4-Pg-svM" customClass="AdvancedModeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yky-WY-Wd6"/>
-                        <viewControllerLayoutGuide type="bottom" id="DVh-Pa-ZBR"/>
+                        <viewControllerLayoutGuide type="top" id="Bq4-UV-egz"/>
+                        <viewControllerLayoutGuide type="bottom" id="mQC-YO-goo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aok-cN-oeN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="J3y-N3-kHn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJL-rQ-KcV">
-                                <rect key="frame" x="69.5" y="28" width="236" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="236" id="GnU-EB-Cpk"/>
-                                    <constraint firstAttribute="height" constant="69" id="yid-CB-1gx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSO-KW-LMm">
-                                <rect key="frame" x="16" y="204" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="4f6-Jw-7R7"/>
-                                    <constraint firstAttribute="height" constant="36" id="cPa-zB-KMB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN5-p0-FIx">
-                                <rect key="frame" x="16" y="300" width="151" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="Cz6-g4-TTc"/>
-                                    <constraint firstAttribute="width" constant="151" id="wOY-oS-9ey"/>
-                                </constraints>
-                                <string key="text">Filter 
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhS-aB-Epz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1080"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-Wm-w6S">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1080"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJL-rQ-KcV">
+                                                <rect key="frame" x="69" y="8" width="236" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="236" id="U3h-tz-XuH"/>
+                                                    <constraint firstAttribute="height" constant="69" id="bl8-Gl-jGi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixS-ir-FZR">
+                                                <rect key="frame" x="80" y="98" width="214" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="CG9-Qh-vtZ"/>
+                                                    <constraint firstAttribute="width" constant="214" id="MLi-wC-Erm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSO-KW-LMm">
+                                                <rect key="frame" x="26" y="169" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="139" id="2MM-R4-szl"/>
+                                                    <constraint firstAttribute="height" constant="36" id="r1h-fE-wzc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GN5-p0-FIx">
+                                                <rect key="frame" x="26" y="265" width="151" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="Cle-a1-MBu"/>
+                                                    <constraint firstAttribute="width" constant="151" id="Phj-VF-ZTY"/>
+                                                </constraints>
+                                                <string key="text">Filter 
 Characteristics</string>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ripple (dB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEq-1J-lyy">
-                                <rect key="frame" x="23" y="414" width="124" height="34"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ripple (dB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEq-1J-lyy">
+                                                <rect key="frame" x="33" y="379" width="124" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="0a8-az-vZW"/>
+                                                    <constraint firstAttribute="width" constant="124" id="A4x-O4-dXJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Poles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYR-U2-ahr">
+                                                <rect key="frame" x="22" y="479" width="159" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="159" id="B2u-eo-qDL"/>
+                                                    <constraint firstAttribute="height" constant="36" id="VI9-RL-NGY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUs-GW-0Tn">
+                                                <rect key="frame" x="190" y="168" width="163" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="Yfh-vH-4AP"/>
+                                                    <constraint firstAttribute="width" constant="163" id="Zob-XU-xZB"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chU-wa-dYd">
+                                                <rect key="frame" x="190" y="269" width="163" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="163" id="3gh-tD-ZJa"/>
+                                                    <constraint firstAttribute="height" constant="38" id="pX1-8U-k2C"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAF-cr-tGM">
+                                                <rect key="frame" x="190" y="377" width="163" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="Y6d-JV-oxI"/>
+                                                    <constraint firstAttribute="width" constant="163" id="j9d-x5-SAn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-lC-Yot">
+                                                <rect key="frame" x="190" y="478" width="163" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="163" id="Tq4-SG-qb4"/>
+                                                    <constraint firstAttribute="height" constant="38" id="lOQ-tW-CdI"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-xf-vK9">
+                                                <rect key="frame" x="185" y="924" width="126" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="126" id="71K-Hc-SpA"/>
+                                                    <constraint firstAttribute="height" constant="38" id="SEO-Nl-RpJ"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oQ-Sz-Xyg">
+                                                <rect key="frame" x="317" y="925" width="42" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="in7-hI-RGb"/>
+                                                    <constraint firstAttribute="width" constant="42" id="mxJ-wO-SXD"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacitor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNZ-rr-NaB">
+                                                <rect key="frame" x="16" y="925" width="155" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="155" id="Pob-eC-CnV"/>
+                                                    <constraint firstAttribute="height" constant="36" id="rcY-ch-HPM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-F4-apu">
+                                                <rect key="frame" x="185" y="881" width="126" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="126" id="SNc-MS-5wz"/>
+                                                    <constraint firstAttribute="height" constant="38" id="xng-vt-lIp"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFP-nt-e6h">
+                                                <rect key="frame" x="317" y="882" width="42" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="Bvc-oE-KYl"/>
+                                                    <constraint firstAttribute="width" constant="42" id="gZc-Gd-0hM"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HTY-Q0-UNy">
+                                                <rect key="frame" x="185" y="787" width="126" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="D16-82-GDJ"/>
+                                                    <constraint firstAttribute="width" constant="126" id="OBs-Ye-TJo"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1q-k3-5aA">
+                                                <rect key="frame" x="317" y="788" width="42" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="O4y-5e-MDv"/>
+                                                    <constraint firstAttribute="width" constant="42" id="Sa5-tP-FzQ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enG-6T-QUh">
+                                                <rect key="frame" x="24" y="745" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="GS6-K8-WI9"/>
+                                                    <constraint firstAttribute="width" constant="139" id="ZzE-K9-2Ne"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacitor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-6k-wb5">
+                                                <rect key="frame" x="16" y="788" width="155" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="8CN-hH-fzz"/>
+                                                    <constraint firstAttribute="width" constant="155" id="u5i-9A-42W"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K2f-YI-RCd">
+                                                <rect key="frame" x="185" y="744" width="126" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="4PY-Ek-LxO"/>
+                                                    <constraint firstAttribute="width" constant="126" id="b0j-rh-V19"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-WX-C7U">
+                                                <rect key="frame" x="317" y="745" width="42" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="42" id="26r-EV-aEC"/>
+                                                    <constraint firstAttribute="height" constant="38" id="Ndq-pO-mbu"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XdR-Gv-jRm">
+                                                <rect key="frame" x="185" y="645" width="126" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="126" id="pv7-Xd-70h"/>
+                                                    <constraint firstAttribute="height" constant="38" id="z7C-Hg-aB7"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKq-IO-LZp">
+                                                <rect key="frame" x="317" y="646" width="42" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="PiQ-rt-rgT"/>
+                                                    <constraint firstAttribute="width" constant="42" id="oUq-QQ-Nhv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScI-Fq-uup">
+                                                <rect key="frame" x="24" y="603" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="RcX-W3-8h5"/>
+                                                    <constraint firstAttribute="width" constant="139" id="h9k-Ws-xgb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnr-BM-YEE">
+                                                <rect key="frame" x="16" y="559" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="139" id="6xT-tK-fEc"/>
+                                                    <constraint firstAttribute="height" constant="36" id="vKg-Jd-RF8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9T-S3-Qvo">
+                                                <rect key="frame" x="16" y="701" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="8z5-0r-P60"/>
+                                                    <constraint firstAttribute="width" constant="139" id="BeS-BE-xY7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69L-Y8-dkI">
+                                                <rect key="frame" x="16" y="838" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="139" id="Adf-Fw-7KC"/>
+                                                    <constraint firstAttribute="height" constant="36" id="zgR-nJ-YsE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacitor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQB-cT-LmO">
+                                                <rect key="frame" x="16" y="646" width="155" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="155" id="Dty-eK-LcA"/>
+                                                    <constraint firstAttribute="height" constant="36" id="xri-Fb-LCb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="D7h-am-PtD">
+                                                <rect key="frame" x="185" y="603" width="126" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="126" id="60m-GC-10E"/>
+                                                    <constraint firstAttribute="height" constant="38" id="jiV-Kh-N4V"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-rV-1gG">
+                                                <rect key="frame" x="317" y="603" width="42" height="38"/>
+                                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="42" id="3HR-if-BWi"/>
+                                                    <constraint firstAttribute="height" constant="38" id="JC0-nP-4di"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPg-zK-kHn">
+                                                <rect key="frame" x="24" y="882" width="139" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="139" id="KjS-3O-539"/>
+                                                    <constraint firstAttribute="height" constant="36" id="pT8-xj-nxc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-0X-ePy">
+                                                <rect key="frame" x="10" y="1006" width="61" height="66"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="66" id="rnO-wz-5tG"/>
+                                                    <constraint firstAttribute="width" constant="61" id="yCR-fZ-xzK"/>
+                                                </constraints>
+                                                <state key="normal" image="go back.png"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="wIk-oG-rPq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wz-cg8">
+                                                <rect key="frame" x="130" y="1018" width="175" height="48"/>
+                                                <color key="backgroundColor" red="0.9756458402" green="0.63757961990000001" blue="0.3784518838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="XfE-AH-68K"/>
+                                                    <constraint firstAttribute="width" constant="175" id="fSK-TT-RcO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                <state key="normal" title="Calculate">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="CalcButton:" destination="3O4-Pg-svM" eventType="touchUpInside" id="r5c-tg-WkF"/>
+                                                    <action selector="CalcButton:" destination="Vqi-T4-yvI" eventType="touchUpInside" id="za7-ni-dkb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="lJL-rQ-KcV" firstAttribute="centerX" secondItem="Qvu-Wm-w6S" secondAttribute="centerX" id="2xl-f1-6Mm"/>
+                                            <constraint firstItem="VEq-1J-lyy" firstAttribute="top" secondItem="GN5-p0-FIx" secondAttribute="bottom" constant="68" id="3iq-Yq-ENL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qbf-WX-C7U" secondAttribute="trailing" constant="16" id="4IP-FC-wtt"/>
+                                            <constraint firstAttribute="trailing" secondItem="chU-wa-dYd" secondAttribute="trailing" constant="22" id="4PH-NV-Xt0"/>
+                                            <constraint firstItem="aPg-zK-kHn" firstAttribute="top" secondItem="69L-Y8-dkI" secondAttribute="bottom" constant="8" id="4d4-l2-Lgx"/>
+                                            <constraint firstItem="XFP-nt-e6h" firstAttribute="leading" secondItem="nU5-F4-apu" secondAttribute="trailing" constant="6" id="6px-aW-oih"/>
+                                            <constraint firstAttribute="trailing" secondItem="PgX-wz-cg8" secondAttribute="trailing" constant="70" id="7ao-pH-0IO"/>
+                                            <constraint firstItem="qAs-lC-Yot" firstAttribute="top" secondItem="GAF-cr-tGM" secondAttribute="bottom" constant="63" id="8Jd-iU-uoX"/>
+                                            <constraint firstItem="zQB-cT-LmO" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="16" id="8XR-BP-lEv"/>
+                                            <constraint firstItem="QYR-U2-ahr" firstAttribute="top" secondItem="VEq-1J-lyy" secondAttribute="bottom" constant="66" id="9HB-ES-4Mc"/>
+                                            <constraint firstAttribute="height" constant="1080" id="9jC-tK-Myc"/>
+                                            <constraint firstAttribute="bottom" secondItem="PgX-wz-cg8" secondAttribute="bottom" constant="14" id="9uv-Bw-hhO"/>
+                                            <constraint firstItem="GAF-cr-tGM" firstAttribute="top" secondItem="chU-wa-dYd" secondAttribute="bottom" constant="70" id="AqD-Hh-iUZ"/>
+                                            <constraint firstItem="K2f-YI-RCd" firstAttribute="top" secondItem="N9T-S3-Qvo" secondAttribute="bottom" constant="7" id="B6H-E7-ffv"/>
+                                            <constraint firstItem="VEq-1J-lyy" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="33" id="DF8-HT-6L9"/>
+                                            <constraint firstItem="Qbf-WX-C7U" firstAttribute="top" secondItem="N9T-S3-Qvo" secondAttribute="bottom" constant="8" id="DxC-BR-EBn"/>
+                                            <constraint firstItem="PUs-GW-0Tn" firstAttribute="top" secondItem="ixS-ir-FZR" secondAttribute="bottom" constant="38" id="GBr-va-ZQd"/>
+                                            <constraint firstItem="enG-6T-QUh" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="24" id="H7M-Jp-MRL"/>
+                                            <constraint firstItem="enG-6T-QUh" firstAttribute="top" secondItem="N9T-S3-Qvo" secondAttribute="bottom" constant="8" id="IGD-T9-hH2"/>
+                                            <constraint firstItem="ha6-0X-ePy" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="10" id="IMV-3h-M3e"/>
+                                            <constraint firstItem="h1q-k3-5aA" firstAttribute="top" secondItem="Qbf-WX-C7U" secondAttribute="bottom" constant="5" id="IfR-0l-Or7"/>
+                                            <constraint firstItem="HTY-Q0-UNy" firstAttribute="top" secondItem="K2f-YI-RCd" secondAttribute="bottom" constant="5" id="Ihg-Cx-KGm"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="PgX-wz-cg8" secondAttribute="trailing" constant="62" id="MKq-D9-pRb"/>
+                                            <constraint firstItem="69L-Y8-dkI" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="16" id="NeX-58-tuh"/>
+                                            <constraint firstItem="D7h-am-PtD" firstAttribute="top" secondItem="jnr-BM-YEE" secondAttribute="bottom" constant="8" id="OBf-JK-QW7"/>
+                                            <constraint firstAttribute="bottom" secondItem="ha6-0X-ePy" secondAttribute="bottom" constant="8" id="P3q-qq-RQk"/>
+                                            <constraint firstItem="DNZ-rr-NaB" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="16" id="PbU-cb-D6j"/>
+                                            <constraint firstItem="uA2-6k-wb5" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="16" id="Rwc-jy-lIA"/>
+                                            <constraint firstItem="nU5-F4-apu" firstAttribute="top" secondItem="69L-Y8-dkI" secondAttribute="bottom" constant="7" id="Snf-ar-OCw"/>
+                                            <constraint firstItem="HKq-IO-LZp" firstAttribute="leading" secondItem="XdR-Gv-jRm" secondAttribute="trailing" constant="6" id="X4q-OT-9SI"/>
+                                            <constraint firstItem="4oQ-Sz-Xyg" firstAttribute="leading" secondItem="pg3-xf-vK9" secondAttribute="trailing" constant="6" id="XCB-gq-4HC"/>
+                                            <constraint firstAttribute="trailing" secondItem="GAF-cr-tGM" secondAttribute="trailing" constant="22" id="Xjx-Cb-xKR"/>
+                                            <constraint firstItem="pg3-xf-vK9" firstAttribute="top" secondItem="nU5-F4-apu" secondAttribute="bottom" constant="5" id="Yos-z6-H82"/>
+                                            <constraint firstItem="XdR-Gv-jRm" firstAttribute="top" secondItem="D7h-am-PtD" secondAttribute="bottom" constant="4" id="alo-Oh-3r1"/>
+                                            <constraint firstItem="GN5-p0-FIx" firstAttribute="top" secondItem="ZSO-KW-LMm" secondAttribute="bottom" constant="60" id="bAE-H1-mtX"/>
+                                            <constraint firstItem="QYR-U2-ahr" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="22" id="chC-eO-CSL"/>
+                                            <constraint firstItem="HKq-IO-LZp" firstAttribute="top" secondItem="rjB-rV-1gG" secondAttribute="bottom" constant="5" id="cpy-dW-mVk"/>
+                                            <constraint firstAttribute="trailing" secondItem="rjB-rV-1gG" secondAttribute="trailing" constant="16" id="crg-xH-SVk"/>
+                                            <constraint firstItem="Qbf-WX-C7U" firstAttribute="leading" secondItem="K2f-YI-RCd" secondAttribute="trailing" constant="6" id="d4I-l2-qN5"/>
+                                            <constraint firstItem="ixS-ir-FZR" firstAttribute="centerX" secondItem="Qvu-Wm-w6S" secondAttribute="centerX" id="d9i-2S-CXO"/>
+                                            <constraint firstItem="h1q-k3-5aA" firstAttribute="leading" secondItem="HTY-Q0-UNy" secondAttribute="trailing" constant="6" id="dZw-0E-H8u"/>
+                                            <constraint firstAttribute="trailing" secondItem="XFP-nt-e6h" secondAttribute="trailing" constant="16" id="dyN-AW-sjt"/>
+                                            <constraint firstItem="zQB-cT-LmO" firstAttribute="top" secondItem="ScI-Fq-uup" secondAttribute="bottom" constant="7" id="g3x-78-iwg"/>
+                                            <constraint firstItem="lJL-rQ-KcV" firstAttribute="top" secondItem="Qvu-Wm-w6S" secondAttribute="top" constant="8" id="gUf-zn-u6G"/>
+                                            <constraint firstItem="rjB-rV-1gG" firstAttribute="leading" secondItem="D7h-am-PtD" secondAttribute="trailing" constant="6" id="h4O-hF-b3G"/>
+                                            <constraint firstItem="ixS-ir-FZR" firstAttribute="top" secondItem="lJL-rQ-KcV" secondAttribute="bottom" constant="21" id="hP5-S3-vPS"/>
+                                            <constraint firstItem="uA2-6k-wb5" firstAttribute="top" secondItem="enG-6T-QUh" secondAttribute="bottom" constant="7" id="i0l-XS-gM2"/>
+                                            <constraint firstItem="ZSO-KW-LMm" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="26" id="i60-cr-0bF"/>
+                                            <constraint firstAttribute="trailing" secondItem="h1q-k3-5aA" secondAttribute="trailing" constant="16" id="iLY-rH-PN1"/>
+                                            <constraint firstItem="ScI-Fq-uup" firstAttribute="top" secondItem="jnr-BM-YEE" secondAttribute="bottom" constant="8" id="im1-bu-kaa"/>
+                                            <constraint firstItem="jnr-BM-YEE" firstAttribute="top" secondItem="QYR-U2-ahr" secondAttribute="bottom" constant="44" id="k5m-oe-5Ss"/>
+                                            <constraint firstAttribute="trailing" secondItem="qAs-lC-Yot" secondAttribute="trailing" constant="22" id="k8g-WT-ENN"/>
+                                            <constraint firstItem="ScI-Fq-uup" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="24" id="ktm-Py-Iha"/>
+                                            <constraint firstItem="aPg-zK-kHn" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="24" id="lQi-hK-lLz"/>
+                                            <constraint firstItem="ZSO-KW-LMm" firstAttribute="top" secondItem="ixS-ir-FZR" secondAttribute="bottom" constant="39" id="nNK-4a-wQ3"/>
+                                            <constraint firstItem="4oQ-Sz-Xyg" firstAttribute="top" secondItem="XFP-nt-e6h" secondAttribute="bottom" constant="5" id="nc3-ti-m9M"/>
+                                            <constraint firstItem="chU-wa-dYd" firstAttribute="top" secondItem="PUs-GW-0Tn" secondAttribute="bottom" constant="63" id="neJ-1h-0it"/>
+                                            <constraint firstItem="N9T-S3-Qvo" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="16" id="nqa-b7-krk"/>
+                                            <constraint firstItem="69L-Y8-dkI" firstAttribute="top" secondItem="uA2-6k-wb5" secondAttribute="bottom" constant="14" id="pBm-vG-834"/>
+                                            <constraint firstAttribute="width" constant="375" id="pfC-Ih-1Yc"/>
+                                            <constraint firstItem="DNZ-rr-NaB" firstAttribute="top" secondItem="aPg-zK-kHn" secondAttribute="bottom" constant="7" id="plo-wz-YFU"/>
+                                            <constraint firstItem="XFP-nt-e6h" firstAttribute="top" secondItem="69L-Y8-dkI" secondAttribute="bottom" constant="8" id="qFP-Br-lhI"/>
+                                            <constraint firstAttribute="trailing" secondItem="PUs-GW-0Tn" secondAttribute="trailing" constant="22" id="rlK-DH-8XL"/>
+                                            <constraint firstAttribute="trailing" secondItem="4oQ-Sz-Xyg" secondAttribute="trailing" constant="16" id="sOH-jv-PbJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="HKq-IO-LZp" secondAttribute="trailing" constant="16" id="tO3-if-5Hy"/>
+                                            <constraint firstItem="N9T-S3-Qvo" firstAttribute="top" secondItem="zQB-cT-LmO" secondAttribute="bottom" constant="19" id="wo2-26-PzQ"/>
+                                            <constraint firstItem="rjB-rV-1gG" firstAttribute="top" secondItem="jnr-BM-YEE" secondAttribute="bottom" constant="8" id="wv4-wK-ik3"/>
+                                            <constraint firstItem="jnr-BM-YEE" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="16" id="y9E-hw-Eu2"/>
+                                            <constraint firstAttribute="leadingMargin" secondItem="ha6-0X-ePy" secondAttribute="leading" constant="-2" id="zPu-Br-Znk"/>
+                                            <constraint firstItem="GN5-p0-FIx" firstAttribute="leading" secondItem="Qvu-Wm-w6S" secondAttribute="leading" constant="26" id="zmf-UJ-Ut3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="kSU-L8-MTT"/>
-                                    <constraint firstAttribute="height" constant="34" id="mqA-V7-Bie"/>
+                                    <constraint firstAttribute="width" constant="375" id="5AZ-NJ-AgQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qvu-Wm-w6S" secondAttribute="bottom" id="NNh-15-ueb"/>
+                                    <constraint firstItem="Qvu-Wm-w6S" firstAttribute="centerX" secondItem="bhS-aB-Epz" secondAttribute="centerX" id="e0t-YM-gQ9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qvu-Wm-w6S" secondAttribute="trailing" id="gpJ-XQ-Vr5"/>
+                                    <constraint firstItem="Qvu-Wm-w6S" firstAttribute="top" secondItem="bhS-aB-Epz" secondAttribute="top" id="gwH-yl-BuO"/>
+                                    <constraint firstItem="Qvu-Wm-w6S" firstAttribute="leading" secondItem="bhS-aB-Epz" secondAttribute="leading" id="x2A-2b-xk6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Poles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYR-U2-ahr">
-                                <rect key="frame" x="12" y="514" width="159" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="3t5-uF-gAo"/>
-                                    <constraint firstAttribute="width" constant="159" id="tMH-1x-7Br"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdw-mT-C7f">
-                                <rect key="frame" x="16" y="591" width="61" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="mzt-o0-hy9"/>
-                                    <constraint firstAttribute="width" constant="61" id="uBn-Nt-fs5"/>
-                                </constraints>
-                                <state key="normal" image="go back.png"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gqG-Fv-Ro7"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUs-GW-0Tn">
-                                <rect key="frame" x="180" y="203" width="163" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="pTx-fd-qSU"/>
-                                    <constraint firstAttribute="height" constant="38" id="uCh-h3-fD6"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chU-wa-dYd">
-                                <rect key="frame" x="180" y="304" width="163" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="9K2-2g-u9D"/>
-                                    <constraint firstAttribute="width" constant="163" id="qfn-sV-dvN"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAF-cr-tGM">
-                                <rect key="frame" x="180" y="412" width="163" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="GD6-VY-itK"/>
-                                    <constraint firstAttribute="width" constant="163" id="kXE-wJ-IKx"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-lC-Yot">
-                                <rect key="frame" x="180" y="513" width="163" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="5x2-SB-shk"/>
-                                    <constraint firstAttribute="width" constant="163" id="7yH-z4-9qF"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixS-ir-FZR">
-                                <rect key="frame" x="80" y="119" width="214" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="9o4-Uw-iyn"/>
-                                    <constraint firstAttribute="width" constant="214" id="hpu-5S-cuc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buM-Wz-D99">
-                                <rect key="frame" x="298" y="591" width="61" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="0CK-6l-Arn"/>
-                                    <constraint firstAttribute="width" constant="61" id="Ene-lS-27O"/>
-                                </constraints>
-                                <state key="normal" image="go front.png"/>
-                                <connections>
-                                    <segue destination="aBd-sm-SyV" kind="show" id="PYo-SE-vIX"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lJL-rQ-KcV" firstAttribute="top" secondItem="yky-WY-Wd6" secondAttribute="bottom" constant="8" id="1AH-jN-aej"/>
-                            <constraint firstItem="QYR-U2-ahr" firstAttribute="top" secondItem="VEq-1J-lyy" secondAttribute="bottom" constant="66" id="1DV-0q-mvB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GAF-cr-tGM" secondAttribute="trailing" constant="16" id="AAL-cE-LKO"/>
-                            <constraint firstItem="DVh-Pa-ZBR" firstAttribute="top" secondItem="Qdw-mT-C7f" secondAttribute="bottom" constant="10" id="ADT-HC-fUc"/>
-                            <constraint firstItem="ixS-ir-FZR" firstAttribute="centerX" secondItem="aok-cN-oeN" secondAttribute="centerX" id="Bpo-ny-htk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="chU-wa-dYd" secondAttribute="trailing" constant="16" id="Fka-Xa-RLK"/>
-                            <constraint firstItem="PUs-GW-0Tn" firstAttribute="top" secondItem="ixS-ir-FZR" secondAttribute="bottom" constant="52" id="H9z-95-49Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qAs-lC-Yot" secondAttribute="trailing" constant="16" id="Jac-Fn-dBY"/>
-                            <constraint firstItem="qAs-lC-Yot" firstAttribute="top" secondItem="GAF-cr-tGM" secondAttribute="bottom" constant="63" id="PSh-Xd-bbB"/>
-                            <constraint firstItem="VEq-1J-lyy" firstAttribute="leading" secondItem="aok-cN-oeN" secondAttribute="leadingMargin" constant="7" id="Qev-1P-fuW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="buM-Wz-D99" secondAttribute="trailing" id="RRI-ne-HeJ"/>
-                            <constraint firstItem="DVh-Pa-ZBR" firstAttribute="top" secondItem="buM-Wz-D99" secondAttribute="bottom" constant="10" id="SHk-Xn-4cZ"/>
-                            <constraint firstItem="ZSO-KW-LMm" firstAttribute="top" secondItem="ixS-ir-FZR" secondAttribute="bottom" constant="53" id="TES-aO-hO8"/>
-                            <constraint firstItem="chU-wa-dYd" firstAttribute="top" secondItem="PUs-GW-0Tn" secondAttribute="bottom" constant="63" id="UQ5-Zj-aNB"/>
-                            <constraint firstItem="ixS-ir-FZR" firstAttribute="top" secondItem="lJL-rQ-KcV" secondAttribute="bottom" constant="22" id="W5l-HX-tPB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ZSO-KW-LMm" secondAttribute="leading" id="YCo-id-v1Q"/>
-                            <constraint firstItem="GAF-cr-tGM" firstAttribute="top" secondItem="chU-wa-dYd" secondAttribute="bottom" constant="70" id="ZgN-0I-7MA"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="GN5-p0-FIx" secondAttribute="leading" id="bQI-tb-2k7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PUs-GW-0Tn" secondAttribute="trailing" constant="16" id="c9X-GR-dR4"/>
-                            <constraint firstItem="VEq-1J-lyy" firstAttribute="top" secondItem="GN5-p0-FIx" secondAttribute="bottom" constant="68" id="dJK-FI-ODi"/>
-                            <constraint firstItem="lJL-rQ-KcV" firstAttribute="centerX" secondItem="aok-cN-oeN" secondAttribute="centerX" id="dpH-dK-QoT"/>
-                            <constraint firstItem="GN5-p0-FIx" firstAttribute="top" secondItem="ZSO-KW-LMm" secondAttribute="bottom" constant="60" id="sBs-yX-St9"/>
-                            <constraint firstItem="QYR-U2-ahr" firstAttribute="leading" secondItem="aok-cN-oeN" secondAttribute="leadingMargin" constant="-4" id="wyA-RI-shb"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Qdw-mT-C7f" secondAttribute="leading" id="xth-hd-sGA"/>
+                            <constraint firstItem="Qvu-Wm-w6S" firstAttribute="width" secondItem="J3y-N3-kHn" secondAttribute="width" id="5kX-ug-7gY"/>
+                            <constraint firstAttribute="trailing" secondItem="bhS-aB-Epz" secondAttribute="trailing" id="Tmu-Um-sRw"/>
+                            <constraint firstItem="bhS-aB-Epz" firstAttribute="leading" secondItem="J3y-N3-kHn" secondAttribute="leading" id="a5Q-Kp-SJc"/>
+                            <constraint firstItem="bhS-aB-Epz" firstAttribute="top" secondItem="Bq4-UV-egz" secondAttribute="bottom" id="bPu-xM-dbt"/>
+                            <constraint firstItem="mQC-YO-goo" firstAttribute="top" secondItem="bhS-aB-Epz" secondAttribute="bottom" id="ok9-r6-GXM"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1100"/>
                     <connections>
-                        <outlet property="FilterCharacteristics" destination="chU-wa-dYd" id="ZHh-SB-7y1"/>
-                        <outlet property="FilterType" destination="PUs-GW-0Tn" id="A05-Yg-yBb"/>
-                        <outlet property="Poles" destination="qAs-lC-Yot" id="1yd-df-BzA"/>
-                        <outlet property="Ripple" destination="GAF-cr-tGM" id="Gve-DS-pDP"/>
+                        <outlet property="FilterCharacteristics" destination="chU-wa-dYd" id="q6x-U8-m8Z"/>
+                        <outlet property="FilterType" destination="PUs-GW-0Tn" id="y5k-Sa-GeJ"/>
+                        <outlet property="Poles" destination="qAs-lC-Yot" id="p6f-66-sr2"/>
+                        <outlet property="Ripple" destination="GAF-cr-tGM" id="lci-KU-Rzx"/>
+                        <outlet property="Stage1C" destination="XdR-Gv-jRm" id="d5K-gk-Cel"/>
+                        <outlet property="Stage1CMultiplier" destination="HKq-IO-LZp" id="Jxu-Gr-OoA"/>
+                        <outlet property="Stage1R" destination="D7h-am-PtD" id="GS9-dS-135"/>
+                        <outlet property="Stage1RMultiplier" destination="rjB-rV-1gG" id="ves-NC-MBs"/>
+                        <outlet property="Stage2C" destination="HTY-Q0-UNy" id="vTg-Vx-mPK"/>
+                        <outlet property="Stage2CMultiplier" destination="h1q-k3-5aA" id="qvL-Wt-Aeg"/>
+                        <outlet property="Stage2R" destination="K2f-YI-RCd" id="73f-9b-jLe"/>
+                        <outlet property="Stage2RMultiplier" destination="Qbf-WX-C7U" id="ZxJ-7L-klD"/>
+                        <outlet property="Stage3C" destination="pg3-xf-vK9" id="U0O-eJ-Z8P"/>
+                        <outlet property="Stage3CMultiplier" destination="4oQ-Sz-Xyg" id="hWg-CL-DJl"/>
+                        <outlet property="Stage3R" destination="nU5-F4-apu" id="D6P-0t-KqE"/>
+                        <outlet property="Stage3RMultiplier" destination="XFP-nt-e6h" id="rQx-B0-YHo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bNG-xN-fd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uge-hP-Ost" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="553"/>
-        </scene>
-        <!--Advanced Mode View Controller-->
-        <scene sceneID="VNR-ga-Dan">
-            <objects>
-                <viewController id="aBd-sm-SyV" customClass="AdvancedModeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dHh-SL-8Y0"/>
-                        <viewControllerLayoutGuide type="bottom" id="55y-eD-HFP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oWv-AL-jgu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE FILTERS CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxV-NO-Vn0">
-                                <rect key="frame" x="70" y="28" width="236" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="236" id="Nwe-0i-1VN"/>
-                                    <constraint firstAttribute="height" constant="69" id="zjf-RG-eYD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-0X-ePy">
-                                <rect key="frame" x="16" y="591" width="61" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="rnO-wz-5tG"/>
-                                    <constraint firstAttribute="width" constant="61" id="yCR-fZ-xzK"/>
-                                </constraints>
-                                <state key="normal" image="go back.png"/>
-                                <connections>
-                                    <segue destination="OAX-QM-hHM" kind="show" id="033-Uj-vUi"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hto-SC-baA">
-                                <rect key="frame" x="80" y="119" width="214" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="IlH-gn-bcn"/>
-                                    <constraint firstAttribute="width" constant="214" id="ifg-WZ-hb9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-xf-vK9">
-                                <rect key="frame" x="185" y="536" width="126" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="5RV-Gt-OXn"/>
-                                    <constraint firstAttribute="height" constant="38" id="rNE-PR-3Ad"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oQ-Sz-Xyg">
-                                <rect key="frame" x="317" y="537" width="42" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="MuL-7y-wik"/>
-                                    <constraint firstAttribute="height" constant="38" id="cd8-OX-YIO"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacitor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNZ-rr-NaB">
-                                <rect key="frame" x="16" y="537" width="155" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="Ctu-bt-8zk"/>
-                                    <constraint firstAttribute="height" constant="36" id="VhM-NI-kkp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-F4-apu">
-                                <rect key="frame" x="185" y="493" width="126" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="X5g-hx-BcC"/>
-                                    <constraint firstAttribute="height" constant="38" id="l6I-PM-HJA"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFP-nt-e6h">
-                                <rect key="frame" x="317" y="494" width="42" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="2Vn-f8-hy0"/>
-                                    <constraint firstAttribute="width" constant="42" id="ZDT-Po-Kfi"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HTY-Q0-UNy">
-                                <rect key="frame" x="185" y="399" width="126" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="M7g-eO-bnY"/>
-                                    <constraint firstAttribute="width" constant="126" id="wfM-2R-Bxl"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1q-k3-5aA">
-                                <rect key="frame" x="317" y="400" width="42" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="YIC-v9-WKN"/>
-                                    <constraint firstAttribute="height" constant="38" id="wXe-8Q-IKR"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enG-6T-QUh">
-                                <rect key="frame" x="24" y="357" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="jnC-QP-2Vg"/>
-                                    <constraint firstAttribute="width" constant="139" id="zBw-bl-sgO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacitor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-6k-wb5">
-                                <rect key="frame" x="16" y="400" width="155" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="0jN-Ce-NPO"/>
-                                    <constraint firstAttribute="height" constant="36" id="9x8-Kd-Dch"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K2f-YI-RCd">
-                                <rect key="frame" x="185" y="356" width="126" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="V56-dO-auG"/>
-                                    <constraint firstAttribute="height" constant="38" id="YOm-kB-Rcx"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-WX-C7U">
-                                <rect key="frame" x="317" y="357" width="42" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="d0O-d8-aTf"/>
-                                    <constraint firstAttribute="width" constant="42" id="xz5-yC-QS3"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XdR-Gv-jRm">
-                                <rect key="frame" x="185" y="257" width="126" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="Fk5-bF-a0V"/>
-                                    <constraint firstAttribute="width" constant="126" id="bSw-22-1qZ"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKq-IO-LZp">
-                                <rect key="frame" x="317" y="258" width="42" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="RV6-Sv-EpL"/>
-                                    <constraint firstAttribute="height" constant="38" id="Z0u-GW-dfu"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScI-Fq-uup">
-                                <rect key="frame" x="24" y="215" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="3w6-pL-etS"/>
-                                    <constraint firstAttribute="height" constant="36" id="NSq-DP-cmi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnr-BM-YEE">
-                                <rect key="frame" x="16" y="171" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="fZk-Nw-Mai"/>
-                                    <constraint firstAttribute="height" constant="36" id="vba-UC-QIi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9T-S3-Qvo">
-                                <rect key="frame" x="16" y="313" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="4ug-77-8up"/>
-                                    <constraint firstAttribute="width" constant="139" id="eim-rs-oA9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69L-Y8-dkI">
-                                <rect key="frame" x="16" y="450" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="3bz-EB-YXx"/>
-                                    <constraint firstAttribute="height" constant="36" id="m4s-Nv-Ac0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacitor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQB-cT-LmO">
-                                <rect key="frame" x="16" y="258" width="155" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="JDA-oY-Bwy"/>
-                                    <constraint firstAttribute="height" constant="36" id="Zgy-cG-qo0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="D7h-am-PtD">
-                                <rect key="frame" x="185" y="215" width="126" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="l80-Nb-TXf"/>
-                                    <constraint firstAttribute="width" constant="126" id="pqQ-wT-Klh"/>
-                                </constraints>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-rV-1gG">
-                                <rect key="frame" x="317" y="215" width="42" height="38"/>
-                                <color key="backgroundColor" red="0.97564798590000001" green="0.6375750899" blue="0.38258063790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="6mI-wH-VxB"/>
-                                    <constraint firstAttribute="width" constant="42" id="vQZ-vy-TZd"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wz-cg8">
-                                <rect key="frame" x="136" y="603" width="175" height="48"/>
-                                <color key="backgroundColor" red="0.9756458402" green="0.63757961990000001" blue="0.3784518838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="XfE-AH-68K"/>
-                                    <constraint firstAttribute="width" constant="175" id="fSK-TT-RcO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="CalcButton:" destination="Vqi-T4-yvI" eventType="touchUpInside" id="za7-ni-dkb"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resistor Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPg-zK-kHn">
-                                <rect key="frame" x="24" y="494" width="139" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="eK9-Za-hbh"/>
-                                    <constraint firstAttribute="height" constant="36" id="kXU-eq-vDB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.26601317520000001" green="0.41033869979999998" blue="0.82419574259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Qbf-WX-C7U" firstAttribute="top" secondItem="N9T-S3-Qvo" secondAttribute="bottom" constant="8" id="0Xw-TW-CnE"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="DNZ-rr-NaB" secondAttribute="leading" id="0bW-xM-XbD"/>
-                            <constraint firstItem="XFP-nt-e6h" firstAttribute="top" secondItem="69L-Y8-dkI" secondAttribute="bottom" constant="8" id="1Vi-vZ-tKb"/>
-                            <constraint firstItem="nxV-NO-Vn0" firstAttribute="centerX" secondItem="oWv-AL-jgu" secondAttribute="centerX" id="1nn-Vj-oLI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HKq-IO-LZp" secondAttribute="trailing" id="2T6-oj-eC2"/>
-                            <constraint firstItem="hto-SC-baA" firstAttribute="centerX" secondItem="oWv-AL-jgu" secondAttribute="centerX" id="82j-I0-I3Y"/>
-                            <constraint firstItem="D7h-am-PtD" firstAttribute="top" secondItem="jnr-BM-YEE" secondAttribute="bottom" constant="8" id="9rD-Ek-2xr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="h1q-k3-5aA" secondAttribute="trailing" id="CJR-tm-Flz"/>
-                            <constraint firstItem="enG-6T-QUh" firstAttribute="top" secondItem="N9T-S3-Qvo" secondAttribute="bottom" constant="8" id="CgE-be-cO4"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ha6-0X-ePy" secondAttribute="leading" id="DiV-Kt-D2i"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XFP-nt-e6h" secondAttribute="trailing" id="Ekh-D7-40E"/>
-                            <constraint firstItem="rjB-rV-1gG" firstAttribute="leading" secondItem="D7h-am-PtD" secondAttribute="trailing" constant="6" id="FY1-4G-zjp"/>
-                            <constraint firstItem="Qbf-WX-C7U" firstAttribute="leading" secondItem="K2f-YI-RCd" secondAttribute="trailing" constant="6" id="Icj-y1-2py"/>
-                            <constraint firstItem="nxV-NO-Vn0" firstAttribute="top" secondItem="dHh-SL-8Y0" secondAttribute="bottom" constant="8" id="LLZ-ae-D4j"/>
-                            <constraint firstItem="K2f-YI-RCd" firstAttribute="top" secondItem="N9T-S3-Qvo" secondAttribute="bottom" constant="7" id="LrY-c2-nsP"/>
-                            <constraint firstItem="rjB-rV-1gG" firstAttribute="top" secondItem="jnr-BM-YEE" secondAttribute="bottom" constant="8" id="MB1-di-1DN"/>
-                            <constraint firstItem="HKq-IO-LZp" firstAttribute="top" secondItem="rjB-rV-1gG" secondAttribute="bottom" constant="5" id="Mad-ey-y3N"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PgX-wz-cg8" secondAttribute="trailing" constant="48" id="NYi-ke-6MA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rjB-rV-1gG" secondAttribute="trailing" id="Ocb-MK-uHK"/>
-                            <constraint firstItem="zQB-cT-LmO" firstAttribute="top" secondItem="ScI-Fq-uup" secondAttribute="bottom" constant="7" id="OgS-G8-Quc"/>
-                            <constraint firstItem="4oQ-Sz-Xyg" firstAttribute="top" secondItem="XFP-nt-e6h" secondAttribute="bottom" constant="5" id="Spl-hx-V4p"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="uA2-6k-wb5" secondAttribute="leading" id="Ujt-Cg-hw0"/>
-                            <constraint firstItem="HTY-Q0-UNy" firstAttribute="top" secondItem="K2f-YI-RCd" secondAttribute="bottom" constant="5" id="X0F-qe-OTw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qbf-WX-C7U" secondAttribute="trailing" id="YIA-p3-DiD"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="aPg-zK-kHn" secondAttribute="leading" constant="-8" id="YTH-YZ-bQf"/>
-                            <constraint firstItem="uA2-6k-wb5" firstAttribute="top" secondItem="enG-6T-QUh" secondAttribute="bottom" constant="7" id="axW-yd-7uA"/>
-                            <constraint firstItem="XFP-nt-e6h" firstAttribute="leading" secondItem="nU5-F4-apu" secondAttribute="trailing" constant="6" id="bdR-Eu-88G"/>
-                            <constraint firstItem="h1q-k3-5aA" firstAttribute="leading" secondItem="HTY-Q0-UNy" secondAttribute="trailing" constant="6" id="cnA-e7-Tm2"/>
-                            <constraint firstItem="4oQ-Sz-Xyg" firstAttribute="leading" secondItem="pg3-xf-vK9" secondAttribute="trailing" constant="6" id="d4Q-7M-afV"/>
-                            <constraint firstItem="pg3-xf-vK9" firstAttribute="top" secondItem="nU5-F4-apu" secondAttribute="bottom" constant="5" id="d79-bh-eoV"/>
-                            <constraint firstItem="DNZ-rr-NaB" firstAttribute="top" secondItem="aPg-zK-kHn" secondAttribute="bottom" constant="7" id="eDd-7m-6zP"/>
-                            <constraint firstItem="jnr-BM-YEE" firstAttribute="top" secondItem="hto-SC-baA" secondAttribute="bottom" constant="20" id="ezl-f0-mlS"/>
-                            <constraint firstItem="N9T-S3-Qvo" firstAttribute="top" secondItem="zQB-cT-LmO" secondAttribute="bottom" constant="19" id="gCs-lH-QLZ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="jnr-BM-YEE" secondAttribute="leading" id="gMW-60-Pz0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="69L-Y8-dkI" secondAttribute="leading" id="hBt-7n-oir"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="enG-6T-QUh" secondAttribute="leading" constant="-8" id="hQP-z8-8Va"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="N9T-S3-Qvo" secondAttribute="leading" id="hm3-6o-9Up"/>
-                            <constraint firstItem="55y-eD-HFP" firstAttribute="top" secondItem="PgX-wz-cg8" secondAttribute="bottom" constant="16" id="jRg-Jk-F5U"/>
-                            <constraint firstItem="nU5-F4-apu" firstAttribute="top" secondItem="69L-Y8-dkI" secondAttribute="bottom" constant="7" id="lkW-Ud-rQ0"/>
-                            <constraint firstItem="XdR-Gv-jRm" firstAttribute="top" secondItem="D7h-am-PtD" secondAttribute="bottom" constant="4" id="mz2-cg-aJZ"/>
-                            <constraint firstItem="ScI-Fq-uup" firstAttribute="top" secondItem="jnr-BM-YEE" secondAttribute="bottom" constant="8" id="nBi-Kh-tPa"/>
-                            <constraint firstItem="69L-Y8-dkI" firstAttribute="top" secondItem="uA2-6k-wb5" secondAttribute="bottom" constant="14" id="ok6-3z-Krq"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="zQB-cT-LmO" secondAttribute="leading" id="pCh-Rm-OWo"/>
-                            <constraint firstItem="HKq-IO-LZp" firstAttribute="leading" secondItem="XdR-Gv-jRm" secondAttribute="trailing" constant="6" id="pgC-05-rvl"/>
-                            <constraint firstItem="aPg-zK-kHn" firstAttribute="top" secondItem="69L-Y8-dkI" secondAttribute="bottom" constant="8" id="q6x-et-k4u"/>
-                            <constraint firstItem="55y-eD-HFP" firstAttribute="top" secondItem="ha6-0X-ePy" secondAttribute="bottom" constant="10" id="rbw-P8-VEd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ScI-Fq-uup" secondAttribute="leading" constant="-8" id="s33-JI-Zpt"/>
-                            <constraint firstItem="hto-SC-baA" firstAttribute="top" secondItem="nxV-NO-Vn0" secondAttribute="bottom" constant="22" id="sHW-dG-ocO"/>
-                            <constraint firstItem="h1q-k3-5aA" firstAttribute="top" secondItem="Qbf-WX-C7U" secondAttribute="bottom" constant="5" id="uFp-s0-iD9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4oQ-Sz-Xyg" secondAttribute="trailing" id="yf0-zd-tA7"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="CalcButton" destination="PgX-wz-cg8" id="EbJ-V1-6SJ"/>
-                        <outlet property="Stage1C" destination="XdR-Gv-jRm" id="r8x-Te-b7k"/>
-                        <outlet property="Stage1CMultiplier" destination="HKq-IO-LZp" id="YlP-t1-Jvc"/>
-                        <outlet property="Stage1R" destination="D7h-am-PtD" id="0Db-Bf-6to"/>
-                        <outlet property="Stage1RMultiplier" destination="rjB-rV-1gG" id="e3Y-KB-acJ"/>
-                        <outlet property="Stage2C" destination="HTY-Q0-UNy" id="Gqb-mz-0um"/>
-                        <outlet property="Stage2CMultiplier" destination="h1q-k3-5aA" id="v9s-vP-PXX"/>
-                        <outlet property="Stage2R" destination="K2f-YI-RCd" id="uVt-2k-9F7"/>
-                        <outlet property="Stage2RMultiplier" destination="Qbf-WX-C7U" id="TiU-bB-9Gg"/>
-                        <outlet property="Stage3C" destination="pg3-xf-vK9" id="4xj-Tz-rHc"/>
-                        <outlet property="Stage3CMultiplier" destination="4oQ-Sz-Xyg" id="fBe-LB-TDr"/>
-                        <outlet property="Stage3R" destination="nU5-F4-apu" id="Ja0-Bv-As2"/>
-                        <outlet property="Stage3RMultiplier" destination="XFP-nt-e6h" id="jPr-PE-lBW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9hb-Wd-czj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1920.8" y="552.77361319340332"/>
+            <point key="canvasLocation" x="1056.8" y="658.4707646176912"/>
         </scene>
     </scenes>
     <resources>
         <image name="go back.png" width="512" height="512"/>
-        <image name="go front.png" width="512" height="512"/>
         <image name="home.png" width="80" height="80"/>
         <image name="info.png" width="80" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LA6-S2-48S"/>
-        <segue reference="9Ph-lf-XGZ"/>
+        <segue reference="jBv-ff-cGQ"/>
+        <segue reference="wIk-oG-rPq"/>
         <segue reference="SUR-Ni-mFg"/>
-        <segue reference="033-Uj-vUi"/>
     </inferredMetricsTieBreakers>
 </document>
