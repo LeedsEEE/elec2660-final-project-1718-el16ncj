@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AdvancedDataModel.h"
 
 @interface AdvancedModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
+
+@property (strong, nonatomic) AdvancedDataModel *AdvancedObject;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *FilterType;
 @property (weak, nonatomic) IBOutlet UIPickerView *FilterCharacteristics;

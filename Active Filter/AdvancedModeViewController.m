@@ -18,6 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.AdvancedObject = [[AdvancedDataModel alloc] init];
+    
+    self.AdvancedObject.RB1 = 10e3;
+    self.AdvancedObject.RB2 = 10e3;
+    self.AdvancedObject.RB3 = 10e3;
+    
     self.FilterType.dataSource = self;
     self.FilterType.delegate = self;
     
@@ -188,6 +194,20 @@ numberOfRowsInComponent:(NSInteger)component {
     return pickerLabel;
 };
 
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    self.AdvancedObject.type = (int)[self.FilterType selectedRowInComponent:0];
+    self.AdvancedObject.characteristics = (int)[self.FilterCharacteristics selectedRowInComponent:0];
+    self.AdvancedObject.ripple = (int)[self.Ripple selectedRowInComponent:0];
+    self.AdvancedObject.poles = (int)[self.Poles selectedRowInComponent:0];
+    
+    self.AdvancedObject.R1M = (int)[self.Stage1RMultiplier selectedRowInComponent:0];
+    self.AdvancedObject.C1M = (int)[self.Stage1CMultiplier selectedRowInComponent:0];
+    self.AdvancedObject.R2M = (int)[self.Stage2RMultiplier selectedRowInComponent:0];
+    self.AdvancedObject.C2M = (int)[self.Stage2CMultiplier selectedRowInComponent:0];
+    self.AdvancedObject.R3M = (int)[self.Stage3RMultiplier selectedRowInComponent:0];
+    self.AdvancedObject.C3M = (int)[self.Stage3CMultiplier selectedRowInComponent:0];
+};
 
 /*
 #pragma mark - Navigation
@@ -201,6 +221,18 @@ numberOfRowsInComponent:(NSInteger)component {
 
 - (IBAction)CalcButton:(UIButton *)sender {
     
+    self.AdvancedObject.R1T = [self.Stage1R.text floatValue];
+    self.AdvancedObject.C1T = [self.Stage1C.text floatValue];
+    self.AdvancedObject.R2T = [self.Stage2R.text floatValue];
+    self.AdvancedObject.C2T = [self.Stage2C.text floatValue];
+    self.AdvancedObject.R3T = [self.Stage3R.text floatValue];
+    self.AdvancedObject.C3T = [self.Stage3C.text floatValue];
+    
+    (void)self.AdvancedObject.det_g;
+    (void)self.AdvancedObject.det_cn;
+    (void)self.AdvancedObject.calc_gain_Res_val;
+    (void)self.AdvancedObject.calc_Res_Cap_val;
+    (void)self.AdvancedObject.calc_freq;
 };
 
 
