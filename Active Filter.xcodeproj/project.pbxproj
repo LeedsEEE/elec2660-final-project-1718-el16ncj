@@ -13,6 +13,8 @@
 		CA1E302F1FD8AD850020A11C /* App Title 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302B1FD8AD850020A11C /* App Title 3.png */; };
 		CA1E30301FD8AD850020A11C /* App Title 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302C1FD8AD850020A11C /* App Title 2.png */; };
 		CA1E30311FD8AD850020A11C /* App Title 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302D1FD8AD850020A11C /* App Title 1.png */; };
+		CA1E30341FD9AF010020A11C /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1E30321FD9AF010020A11C /* libCorePlot-CocoaTouch.a */; };
+		CA1E30351FD9AF010020A11C /* CorePlotHeaders in Resources */ = {isa = PBXBuildFile; fileRef = CA1E30331FD9AF010020A11C /* CorePlotHeaders */; };
 		CA2FA7611FD456D90030B0F1 /* BasicResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */; };
 		CA74766B1FD692F600B83430 /* low-pass 6 pole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476641FD692F600B83430 /* low-pass 6 pole.png */; };
 		CA74766C1FD692F600B83430 /* low-pass 4 pole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476651FD692F600B83430 /* low-pass 4 pole.png */; };
@@ -64,6 +66,8 @@
 		CA1E302B1FD8AD850020A11C /* App Title 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 3.png"; sourceTree = "<group>"; };
 		CA1E302C1FD8AD850020A11C /* App Title 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 2.png"; sourceTree = "<group>"; };
 		CA1E302D1FD8AD850020A11C /* App Title 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 1.png"; sourceTree = "<group>"; };
+		CA1E30321FD9AF010020A11C /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		CA1E30331FD9AF010020A11C /* CorePlotHeaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CorePlotHeaders; sourceTree = "<group>"; };
 		CA2FA75F1FD456D90030B0F1 /* BasicResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicResultsViewController.h; sourceTree = "<group>"; };
 		CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicResultsViewController.m; sourceTree = "<group>"; };
 		CA7476641FD692F600B83430 /* low-pass 6 pole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "low-pass 6 pole.png"; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1E30341FD9AF010020A11C /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,8 @@
 				CA1E302A1FD8AD850020A11C /* App Title 4.png */,
 				CA1E302B1FD8AD850020A11C /* App Title 3.png */,
 				CA1E302C1FD8AD850020A11C /* App Title 2.png */,
+				CA1E30321FD9AF010020A11C /* libCorePlot-CocoaTouch.a */,
+				CA1E30331FD9AF010020A11C /* CorePlotHeaders */,
 				CA1E302D1FD8AD850020A11C /* App Title 1.png */,
 				CA7476711FD6E83B00B83430 /* go front.png */,
 				CA7476721FD6E83B00B83430 /* go back.png */,
@@ -335,6 +342,7 @@
 				CAE08F081FBC2801006DAD91 /* LaunchScreen.storyboard in Resources */,
 				CAE32C081FD35BCB00BCD21C /* info.png in Resources */,
 				CA74766B1FD692F600B83430 /* low-pass 6 pole.png in Resources */,
+				CA1E30351FD9AF010020A11C /* CorePlotHeaders in Resources */,
 				CAE32C0A1FD361FB00BCD21C /* home.png in Resources */,
 				CA7476731FD6E83B00B83430 /* go front.png in Resources */,
 				CA74766D1FD692F600B83430 /* low-pass 2 pole.png in Resources */,
@@ -537,6 +545,10 @@
 				INFOPLIST_FILE = "Active Filter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Active\\ Filter",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Leeds.Active-Filter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,6 +562,10 @@
 				INFOPLIST_FILE = "Active Filter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Active\\ Filter",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Leeds.Active-Filter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

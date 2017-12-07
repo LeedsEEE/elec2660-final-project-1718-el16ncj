@@ -54,6 +54,8 @@
     self.Stage3CMultiplier.dataSource = self;
     self.Stage3CMultiplier.delegate = self;
     
+    self.scrollView.delegate = self;
+    
     self.Stage1R.delegate = self;
     self.Stage1C.delegate = self;
     self.Stage2R.delegate = self;
@@ -81,7 +83,7 @@
     [self.Stage3C setAlpha:0.6];
     [self.Stage3CMultiplier setUserInteractionEnabled:NO];
     [self.Stage3CMultiplier setAlpha:0.6];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -327,6 +329,78 @@ numberOfRowsInComponent:(NSInteger)component {
     // Pass the selected object to the new view controller.
 }
 
+#pragma mark - Keyboard Notifications
+
+/*- (void)registerForKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardWillHideNotification object:nil];
+    
+};
+
+
+// Called when the UIKeyboardDidShowNotification is sent.
+- (void)keyboardWasShown:(NSNotification*)aNotification
+{
+    NSDictionary* info = [aNotification userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
+    
+    // If active text field is hidden by keyboard, scroll it so it's visible
+    // Your app might not need or want this behavior.
+    CGRect aRect = self.view.frame;
+    aRect.size.height -= kbSize.height;
+    if (!CGRectContainsPoint(aRect, self.Stage3R.frame.origin) ) {
+        [self.scrollView scrollRectToVisible:self.Stage3R.frame animated:YES];
+    }
+};
+
+// Called when the UIKeyboardWillHideNotification is sent
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification
+{
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
+};
+*/
+
+-(void) textFieldDidBeginEditing:(UITextField *)textField {
+    
+    if(self.Stage1R == textField || self.Stage1C == textField) {
+        CGPoint scrollPoint = CGPointMake(0,450);
+        [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
+    
+    else if(self.Stage2R == textField || self.Stage2C == textField) {
+        CGPoint scrollPoint = CGPointMake(0,550);
+      [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
+    
+    else if(self.Stage3R == textField || self.Stage3C == textField) {
+            CGPoint scrollPoint = CGPointMake(0,650);
+            [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
+    else {
+        CGPoint scrollPoint = CGPointMake(0,0);
+        [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
+}
+
+-(void) textFieldDidEndEditing:(UITextField *)textField {
+    
+    CGPoint scrollPoint = CGPointMake(0,435);
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
+}
+
+
 
 - (IBAction)CalcButton:(UIButton *)sender {
     
@@ -336,12 +410,39 @@ numberOfRowsInComponent:(NSInteger)component {
     self.AdvancedObject.C2T = [self.Stage2C.text floatValue];
     self.AdvancedObject.R3T = [self.Stage3R.text floatValue];
     self.AdvancedObject.C3T = [self.Stage3C.text floatValue];
-    
+
     (void)self.AdvancedObject.det_g;
     (void)self.AdvancedObject.det_cn;
     (void)self.AdvancedObject.calc_gain_Res_val;
     (void)self.AdvancedObject.calc_Res_Cap_val;
     (void)self.AdvancedObject.calc_freq;
+};
+
+- (IBAction)HideKeyboard:(UIButton *)sender {
+    
+    if(self.Stage1R.isFirstResponder) {
+        [[self Stage1R] resignFirstResponder];
+    }
+
+    if(self.Stage2R.isFirstResponder) {
+        [[self Stage2R] resignFirstResponder];
+    }
+    
+    if(self.Stage3R.isFirstResponder) {
+        [[self Stage3R] resignFirstResponder];
+    }
+    
+    if(self.Stage1C.isFirstResponder) {
+        [[self Stage1C] resignFirstResponder];
+    }
+    
+    if(self.Stage2C.isFirstResponder) {
+        [[self Stage2C] resignFirstResponder];
+    }
+    
+    if(self.Stage3C.isFirstResponder) {
+        [[self Stage3C] resignFirstResponder];
+    }
 };
 
 

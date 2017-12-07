@@ -10,7 +10,7 @@
 #import "BasicDataModel.h"
 #import "BasicResultsViewController.h"
 
-@interface BasicModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
+@interface BasicModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate, UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *FilterType;
 @property (weak, nonatomic) IBOutlet UIPickerView *FilterCharacteristics;
@@ -24,5 +24,8 @@
 - (IBAction)CalcButton:(UIButton *)sender;
 
 - (IBAction)HideKeyboard:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 
 @end

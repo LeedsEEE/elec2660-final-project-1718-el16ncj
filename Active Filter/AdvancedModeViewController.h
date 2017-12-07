@@ -10,7 +10,7 @@
 #import "AdvancedDataModel.h"
 #import "AdvancedResultsViewController.h"
 
-@interface AdvancedModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
+@interface AdvancedModeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) AdvancedDataModel *AdvancedObject;
 
@@ -32,7 +32,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *Stage3C;
 @property (weak, nonatomic) IBOutlet UIPickerView *Stage3CMultiplier;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 - (IBAction)CalcButton:(UIButton *)sender;
+- (IBAction)HideKeyboard:(UIButton *)sender;
 
 
 @end

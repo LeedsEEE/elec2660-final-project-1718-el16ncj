@@ -201,6 +201,21 @@
     }
 }
 
+#pragma mark - Keyboard hiding and offset
+
+-(void) textFieldDidBeginEditing:(UITextField *)textField {
+  
+    CGPoint scrollPoint = CGPointMake(0,210);
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
+
+};
+
+-(void) textFieldDidEndEditing:(UITextField *)textField {
+    
+    CGPoint scrollPoint = CGPointMake(0,0);
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
+}
+
 - (IBAction)HideKeyboard:(UIButton *)sender {
     
     if(self.CutOff.isFirstResponder) {
