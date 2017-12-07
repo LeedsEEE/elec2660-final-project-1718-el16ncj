@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CA1E30271FD8092D0020A11C /* AdvancedResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E30251FD8092D0020A11C /* AdvancedResultsViewController.m */; };
+		CA1E30291FD8A9270020A11C /* App Title.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E30281FD8A9270020A11C /* App Title.png */; };
+		CA1E302E1FD8AD850020A11C /* App Title 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302A1FD8AD850020A11C /* App Title 4.png */; };
+		CA1E302F1FD8AD850020A11C /* App Title 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302B1FD8AD850020A11C /* App Title 3.png */; };
+		CA1E30301FD8AD850020A11C /* App Title 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302C1FD8AD850020A11C /* App Title 2.png */; };
+		CA1E30311FD8AD850020A11C /* App Title 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1E302D1FD8AD850020A11C /* App Title 1.png */; };
 		CA2FA7611FD456D90030B0F1 /* BasicResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */; };
 		CA74766B1FD692F600B83430 /* low-pass 6 pole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476641FD692F600B83430 /* low-pass 6 pole.png */; };
 		CA74766C1FD692F600B83430 /* low-pass 4 pole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476651FD692F600B83430 /* low-pass 4 pole.png */; };
@@ -54,6 +59,11 @@
 /* Begin PBXFileReference section */
 		CA1E30251FD8092D0020A11C /* AdvancedResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedResultsViewController.m; sourceTree = "<group>"; };
 		CA1E30261FD8092D0020A11C /* AdvancedResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedResultsViewController.h; sourceTree = "<group>"; };
+		CA1E30281FD8A9270020A11C /* App Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title.png"; sourceTree = "<group>"; };
+		CA1E302A1FD8AD850020A11C /* App Title 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 4.png"; sourceTree = "<group>"; };
+		CA1E302B1FD8AD850020A11C /* App Title 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 3.png"; sourceTree = "<group>"; };
+		CA1E302C1FD8AD850020A11C /* App Title 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 2.png"; sourceTree = "<group>"; };
+		CA1E302D1FD8AD850020A11C /* App Title 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Title 1.png"; sourceTree = "<group>"; };
 		CA2FA75F1FD456D90030B0F1 /* BasicResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicResultsViewController.h; sourceTree = "<group>"; };
 		CA2FA7601FD456D90030B0F1 /* BasicResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicResultsViewController.m; sourceTree = "<group>"; };
 		CA7476641FD692F600B83430 /* low-pass 6 pole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "low-pass 6 pole.png"; sourceTree = "<group>"; };
@@ -121,6 +131,11 @@
 		CA1E30241FD808D40020A11C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CA1E30281FD8A9270020A11C /* App Title.png */,
+				CA1E302A1FD8AD850020A11C /* App Title 4.png */,
+				CA1E302B1FD8AD850020A11C /* App Title 3.png */,
+				CA1E302C1FD8AD850020A11C /* App Title 2.png */,
+				CA1E302D1FD8AD850020A11C /* App Title 1.png */,
 				CA7476711FD6E83B00B83430 /* go front.png */,
 				CA7476721FD6E83B00B83430 /* go back.png */,
 				CA7476641FD692F600B83430 /* low-pass 6 pole.png */,
@@ -326,11 +341,16 @@
 				CAE08F051FBC2801006DAD91 /* Assets.xcassets in Resources */,
 				CAE32C061FD3124D00BCD21C /* icons8-left-80.png in Resources */,
 				CA74766F1FD692F600B83430 /* high-pass 4 pole.png in Resources */,
+				CA1E302E1FD8AD850020A11C /* App Title 4.png in Resources */,
+				CA1E302F1FD8AD850020A11C /* App Title 3.png in Resources */,
+				CA1E30291FD8A9270020A11C /* App Title.png in Resources */,
 				CA7476741FD6E83B00B83430 /* go back.png in Resources */,
 				CA7476701FD692F600B83430 /* high-pass 2 pole.png in Resources */,
 				CA74766E1FD692F600B83430 /* high-pass 6 pole.png in Resources */,
+				CA1E30301FD8AD850020A11C /* App Title 2.png in Resources */,
 				CAE08F031FBC2801006DAD91 /* Main.storyboard in Resources */,
 				CA74766C1FD692F600B83430 /* low-pass 4 pole.png in Resources */,
+				CA1E30311FD8AD850020A11C /* App Title 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

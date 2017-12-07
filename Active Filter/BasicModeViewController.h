@@ -23,4 +23,6 @@
 
 - (IBAction)CalcButton:(UIButton *)sender;
 
+- (IBAction)HideKeyboard:(UIButton *)sender;
+
 @end

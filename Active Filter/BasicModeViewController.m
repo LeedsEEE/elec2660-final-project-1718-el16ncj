@@ -39,6 +39,14 @@
     
     [self.Ripple setUserInteractionEnabled:NO];
     [self.Ripple setAlpha:0.6];
+    
+    self.BasicObject.C1 = 10e-9;
+    self.BasicObject.C2 = 10e-9;
+    self.BasicObject.C3 = 10e-9;
+    
+    self.BasicObject.RB1 = 10e3;
+    self.BasicObject.RB2 = 10e3;
+    self.BasicObject.RB3 = 10e3;
 
 }
 
@@ -193,6 +201,13 @@
     }
 }
 
+- (IBAction)HideKeyboard:(UIButton *)sender {
+    
+    if(self.CutOff.isFirstResponder) {
+        [[self CutOff] resignFirstResponder];
+    }
+}
+
 
 - (IBAction)CalcButton:(UIButton *)sender {
     
@@ -202,5 +217,6 @@
     (void)self.BasicObject.calc_freq;
     (void)self.BasicObject.calc_values;
 };
+
 
 @end
