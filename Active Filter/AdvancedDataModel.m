@@ -13,9 +13,10 @@
 //Determine the gain depending on different parameters
 -(void) det_g {
     //Determine the value of gains for a Butterworth Filter
-    //For 2 poles
+    
     if(self.characteristics == 0) {
-        
+    
+        //For 2 poles
         if(self.poles == 0) {
             self.g1 = 1.586;
             self.g2 = 0;
@@ -35,35 +36,49 @@
         }
     }
     
+     //Determine the Values of gain for a Chebyshev (0.5 ripple)
     else if(self.characteristics == 1 && self.ripple == 0) {
-        //Determine the Values of gain for a Chebyshev (0.5 ripple)
+       
+        //For 2 Poles
         if(self.poles == 0) {
             self.g1 = 1.842;
             self.g2 = 0;
             self.g3 = 0;
         }
+        
+        //For 4 Poles
         else if (self.poles == 1) {
             self.g1 = 1.582;
             self.g2 = 2.660;
             self.g3 = 0;
         }
+        
+        //For 6 Poles
         else if (self.poles == 2) {
             self.g1 = 1.537;
             self.g2 = 2.448;
             self.g3 = 2.846;
         }
     }
+    
+    //Determine the Values of gain for a Chebyshev (2 ripple)
     else if(self.characteristics == 1 && self.ripple == 1) {
+        
+        //For 2 Poles
         if(self.poles == 0) {
             self.g1 = 2.114;
             self.g2 = 0;
             self.g3 = 0;
         }
+        
+        //For 4 Poles
         else if (self.poles == 1) {
             self.g1 = 1.924;
             self.g2 = 2.782;
             self.g3 = 0;
         }
+        
+        //For 6 Poles
         else if (self.poles == 2) {
             self.g1 = 1.891;
             self.g2 = 2.648;
@@ -144,6 +159,8 @@
         }
     }
     
+    
+      //Determine the normalising factor for Butterworth
     else {
         
         self.nf1 = 1;
@@ -167,10 +184,7 @@
     
     //Stage 1 resistor value
     
-    if (self.R1M == 3) {
-        self.R1 = self.R1T * 1e9;
-    }
-    else if (self.R1M == 2) {
+    if (self.R1M == 2) {
         self.R1 = self.R1T * 1e6;
     }
     
@@ -184,10 +198,7 @@
 
     //Stage 2 resistor value
     
-    if (self.R2M == 3) {
-        self.R2 = self.R2T * 1e9;
-    }
-    else if (self.R2M == 2) {
+    if (self.R2M == 2) {
         self.R2 = self.R2T * 1e6;
     }
     
@@ -201,10 +212,7 @@
 
     //Stage 3 resistor value
     
-    if (self.R3M == 3) {
-        self.R3 = self.R3T * 1e9;
-    }
-    else if (self.R3M == 2) {
+    if (self.R3M == 2) {
         self.R3 = self.R3T * 1e6;
     }
     
@@ -253,6 +261,7 @@
     }
 };
 
+//Method fo calculating correct gain value
 -(void) calc_freq {
     
     self.freq1 = 1.0/(2.0 * 3.14 * self.R1 * self.C1);

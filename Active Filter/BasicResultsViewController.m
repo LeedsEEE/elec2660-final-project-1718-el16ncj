@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //Code used to verify the values being passed
     NSLog(@"Freq1 = %f", self.BasicObjectPassed.freqf);
     NSLog(@"R1 = %f", self.BasicObjectPassed.R1);
     NSLog(@"C1 = %f", self.BasicObjectPassed.C1);
@@ -31,22 +32,45 @@
     NSLog(@"Type = %i", self.BasicObjectPassed.type);
     NSLog(@"Ripple = %i", self.BasicObjectPassed.ripple);
     
-    
+    //Function to display the correct filter type heading
     (void)self.setFilterLabelVal;
     
+    //***********************************************************************
+    //Source: https://stackoverflow.com/questions/500027/how-to-zoom-in-out-an-uiimage-object-when-user-pinches-screen
+    
+    //Sets the minimum zoom scale for the scroll view
     self.ScrollView.minimumZoomScale = 1.0;
+    
+    //Sets the maximum zoom scale for the scroll view
     self.ScrollView.maximumZoomScale = 6.0;
+    
+    //Sets the size of the scroll view to be that of the image view displaying the circuit diagram
     self.ScrollView.contentSize = self.CircuitDiagram.frame.size;
+    
+    //Setting the delegate as the view controller for the scroll view
     self.ScrollView.delegate = self;
     
+    //Sets the minimum zoom scale for the scroll view
     self.ResponseScrollView.minimumZoomScale = 1.0;
-    self.ResponseScrollView.maximumZoomScale = 6.0;
-    self.ResponseScrollView.contentSize = self.ResponseDiagram.frame.size;
-    self.ResponseScrollView.delegate = self;
-
     
+    //Sets the maximum zoom scale for the scroll view
+    self.ResponseScrollView.maximumZoomScale = 6.0;
+    
+    //Sets the size of the scroll view to be that of the image view displaying the characteristics response graph
+    self.ResponseScrollView.contentSize = self.ResponseDiagram.frame.size;
+   
+    //Setting the delegate as the view controller for the scroll view
+    self.ResponseScrollView.delegate = self;
+    
+    //***********************************************************************
+    
+   //Calling the method to display the correct circuit diagram
     (void)self.displayCircuitDiagram;
+    
+    //Calling the method to display the correct calculated gain setting and filtering component values
     (void)self.setCalcLabelVal;
+    
+    //Calling the method to display the correct characteristics response diagram
     (void)self.displayResponseDiagram;
 }
 
@@ -55,18 +79,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
-
+//Method for displaying the correct filter type based on user selection in the BasicModeView.
 -(void) setFilterLabelVal {
+    
+    //For 2 Poles
     
     if(self.BasicObjectPassed.poles == 0) {
         if(self.BasicObjectPassed.characteristics == 0) {
@@ -96,6 +112,8 @@
         }
     }
     
+    //For 4 Poles
+    
     else if(self.BasicObjectPassed.poles == 1) {
         
         if(self.BasicObjectPassed.characteristics == 0) {
@@ -124,7 +142,9 @@
             }
         }
     }
-        
+    
+        //For 6 Poles
+    
         else if(self.BasicObjectPassed.poles == 2) {
             
             if(self.BasicObjectPassed.characteristics == 0) {
@@ -157,20 +177,11 @@
 };
 
 
+//Method for displaying the correct values for the gain setting and filtering components based on the selections made by the user in BasicMode View.
+
 - (void) setCalcLabelVal {
     
-    [self.Stage1RLabel.layer setCornerRadius:0.5];
-    [self.Stage1CLabel.layer setCornerRadius:0.5];
-    [self.Stage2RLabel.layer setCornerRadius:0.5];
-    [self.Stage2CLabel.layer setCornerRadius:0.5];
-    [self.Stage3RLabel.layer setCornerRadius:0.5];
-    [self.Stage3CLabel.layer setCornerRadius:0.5];
-    [self.Stage1RALabel.layer setCornerRadius:0.5];
-    [self.Stage1RBLabel.layer setCornerRadius:0.5];
-    [self.Stage2RALabel.layer setCornerRadius:0.5];
-    [self.Stage2RBLabel.layer setCornerRadius:0.5];
-    [self.Stage3RALabel.layer setCornerRadius:0.5];
-    [self.Stage3RBLabel.layer setCornerRadius:0.5];
+    //For 6 Poles
     
     if (self.BasicObjectPassed.poles == 2) {
         
@@ -190,10 +201,15 @@
             self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.BasicObjectPassed.R1/1e3)];
         }
         
-        else {
+        else if(self.BasicObjectPassed.R1 >= 1.0){
             
             self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.BasicObjectPassed.R1)];
         }
+        
+        else {
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f mΩ", (self.BasicObjectPassed.R1)/1e-3];
+        }
+
         
         // For Stage 2 R
         
@@ -212,9 +228,13 @@
             self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.BasicObjectPassed.R2/1e3)];
         }
         
-        else {
+        else if(self.BasicObjectPassed.R2 >= 1.0){
             
             self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.BasicObjectPassed.R2)];
+        }
+        
+        else {
+            self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f mΩ", (self.BasicObjectPassed.R2)/1e-3];
         }
         
         
@@ -235,9 +255,13 @@
             self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.BasicObjectPassed.R3/1e3)];
         }
         
-        else {
+        else if(self.BasicObjectPassed.R3 >= 1.0){
             
             self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.BasicObjectPassed.R3)];
+        }
+        
+        else {
+            self.Stage3RLabel.text = [NSString stringWithFormat:@"R = %.2f mΩ", (self.BasicObjectPassed.R1)/1e-3];
         }
         
         // For Stage 1 RA
@@ -426,7 +450,7 @@
         }
     }
     
-    //FOr Poles - 4
+    //For 4 Poles
     
     else if (self.BasicObjectPassed.poles == 1) {
         
@@ -446,9 +470,13 @@
             self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.BasicObjectPassed.R1/1e3)];
         }
         
-        else {
+        else if(self.BasicObjectPassed.R1 >= 1.0){
             
             self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.BasicObjectPassed.R1)];
+        }
+        
+        else {
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f mΩ", (self.BasicObjectPassed.R1)/1e-3];
         }
         
         // For Stage 2 R
@@ -468,17 +496,24 @@
             self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.BasicObjectPassed.R2/1e3)];
         }
         
-        else {
+        else if(self.BasicObjectPassed.R2 >= 1.0){
             
             self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.BasicObjectPassed.R2)];
         }
         
+        else {
+            self.Stage2RLabel.text = [NSString stringWithFormat:@"R = %.2f mΩ", (self.BasicObjectPassed.R2)/1e-3];
+        }
+
         
         // For Stage 3 R
         
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+
         self.Stage3RLabel.text = @"N/A";
         [self.Stage3RLabel setAlpha:0.6];
-        
+        //********************************************************
         
         // For Stage 1 RA
         
@@ -528,8 +563,12 @@
         // For Stage 3 RA
         
         self.Stage3RALabel.text = @"N/A";
-        [self.Stage3RALabel setAlpha:0.6];
         
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+        
+        [self.Stage3RALabel setAlpha:0.6];
+        //********************************************************
         
         // For Stage 1 RB
         
@@ -577,9 +616,12 @@
         
         // For Stage 3 RB
         
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+        
         self.Stage3RBLabel.text = @"N/A";
         [self.Stage3RBLabel setAlpha:0.6];
-        
+        //********************************************************
         
         // For Stage 1 C
         
@@ -617,10 +659,12 @@
         
         
         // For Stage 3 C
-        
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+
         self.Stage3CLabel.text = @"N/A";
         [self.Stage3CLabel setAlpha:0.6];
-        
+        //********************************************************
         
     }
     
@@ -644,10 +688,17 @@
             self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f kΩ", (self.BasicObjectPassed.R1/1e3)];
         }
         
-        else {
+        else if(self.BasicObjectPassed.R1 >= 1.0){
             
             self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f Ω", (self.BasicObjectPassed.R1)];
         }
+        
+        else {
+            self.Stage1RLabel.text = [NSString stringWithFormat:@"R = %.2f mΩ", (self.BasicObjectPassed.R1)/1e-3];
+        }
+
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
         
         // For Stage 2 R
         
@@ -659,7 +710,7 @@
         
         self.Stage3RLabel.text = @"N/A";
         [self.Stage3RLabel setAlpha:0.6];
-        
+        //********************************************************
         
         // For Stage 1 RA
         
@@ -683,6 +734,9 @@
             self.Stage1RALabel.text = [NSString stringWithFormat:@"RA = %.2f Ω", (self.BasicObjectPassed.RA1)];
         }
         
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+
         // For Stage 2 RA
         
         self.Stage2RALabel.text = @"N/A";
@@ -692,7 +746,7 @@
         
         self.Stage3RALabel.text = @"N/A";
         [self.Stage3RALabel setAlpha:0.6];
-        
+        //********************************************************
         
         // For Stage 1 RB
         
@@ -716,6 +770,9 @@
             self.Stage1RBLabel.text = [NSString stringWithFormat:@"RB = %.2f Ω", (self.BasicObjectPassed.RB1)];
         }
         
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+        
         // For Stage 2 RB
         
         self.Stage2RBLabel.text = @"N/A";
@@ -724,7 +781,7 @@
         
         self.Stage3RBLabel.text = @"N/A";
         [self.Stage3RBLabel setAlpha:0.6];
-        
+        //********************************************************
         
         // For Stage 1 C
         
@@ -743,6 +800,9 @@
             self.Stage1CLabel.text = [NSString stringWithFormat:@"C = %.2f pF", (self.BasicObjectPassed.C1/1e-12)];
         }
         
+        //********************************************************
+        //Source: https://stackoverflow.com/questions/2377692/disable-uipickerview
+
         // For Stage 2 C
         
         self.Stage2CLabel.text = @"N/A";
@@ -752,43 +812,57 @@
         
         self.Stage3CLabel.text = @"N/A";
         [self.Stage3CLabel setAlpha:0.6];
-        
+        //********************************************************
     }
 };
 
-
+//Method for displaying the correct circuit diagram based on the user selections in the BasicMode view.
 -(void) displayCircuitDiagram {
     
+    //Method to set the scroll view border colour
     [self.ScrollView.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    
+    //Method to set the curvature of the scroll view.
     [self.ScrollView.layer setCornerRadius:5.0];
+    
+    //Method to set the scroll view border width
     [self.ScrollView.layer setBorderWidth: 4.0];
+    
+    // For Low Pass
     
     if (self.BasicObjectPassed.type == 0) {
         
+        //For 2 Poles
         if(self.BasicObjectPassed.poles == 0) {
             self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 2 pole.png"];
         }
         
+        //For 4 Poles
         else if(self.BasicObjectPassed.poles == 1) {
             self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 4 pole.png"];
         }
         
+        //For 6 Poles
         else if(self.BasicObjectPassed.poles == 2) {
             self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 6 pole.png"];
         }
     }
     
+    //For High Pass
+    
     else if(self.BasicObjectPassed.type == 1) {
         
-        
+        //For 2 Poles
         if(self.BasicObjectPassed.poles == 0) {
             self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 2 pole.png"];
         }
         
+        //For 4 Poles
         else if(self.BasicObjectPassed.poles == 1) {
             self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 4 pole.png"];
         }
         
+        //For 6 Poles
         else if(self.BasicObjectPassed.poles == 2) {
             self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 6 pole.png"];
         }
@@ -796,32 +870,53 @@
 };
 
 -(void) displayResponseDiagram {
-  
+    
+    //Method to set the scroll view border colour
     [self.ResponseScrollView.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    
+    //Method to set the curvature of the scroll view.
     [self.ResponseScrollView.layer setCornerRadius:5.0];
+    
+    //Method to set the scroll view border width
     [self.ResponseScrollView.layer setBorderWidth: 4.0];
     
     
+    //For Low Pass
+    
     if(self.BasicObjectPassed.type == 0) {
         
+        //For Butterworth
         if(self.BasicObjectPassed.characteristics == 0) {
             self.ResponseDiagram.image = [UIImage imageNamed:@"butterworth low pass.png"];
         }
+        
+        //For Chebyshev
         else if(self.BasicObjectPassed.characteristics == 1) {
             self.ResponseDiagram.image = [UIImage imageNamed:@"chebyshev low pass.png"];
         }
     }
     
+    //For High Pass
+    
     else if(self.BasicObjectPassed.type == 1) {
         
+        //For Butterworth
         if(self.BasicObjectPassed.characteristics == 0) {
             self.ResponseDiagram.image = [UIImage imageNamed:@"butterworth high pass.png"];
         }
+        
+        //For Chebyshev
         else if (self.BasicObjectPassed.characteristics == 1) {
             self.ResponseDiagram.image = [UIImage imageNamed:@"chebyshev high pass.png"];
         }
     }
 };
+
+//Method for specifying which components can be zoomed into.
+
+
+//************************************************************************************
+//Source: https://stackoverflow.com/questions/500027/how-to-zoom-in-out-an-uiimage-object-when-user-pinches-screen
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     
@@ -829,17 +924,23 @@
     return self.ResponseDiagram;
     
 };
+//************************************************************************************
 
+//Button for displaying Pan and Zoom info as a pop-up notification.
 - (IBAction)PanAndZoomInfo:(UIButton *)sender {
     
-    UIAlertController *textFieldLimitAlert = [UIAlertController alertControllerWithTitle:@"Pan & Zoom" message:@"The user can use the 'Pinch To Zoom' gesture to zoom into the circuit diagram and use a single touch to pan around the circuit diagram." preferredStyle:UIAlertControllerStyleAlert];
+    //*********************************************************************************
+    //Source: http://nshipster.com/uialertcontroller/
+    
+    UIAlertController *textFieldLimitAlert = [UIAlertController alertControllerWithTitle:@"Pan & Zoom" message:@"You can use the 'Pinch To Zoom' gesture to zoom into the circuit diagram and use a single touch to pan around the circuit diagram." preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
     
     [textFieldLimitAlert addAction:ok];
     
     [self presentViewController:textFieldLimitAlert animated:YES completion:nil];
-}
+    //*********************************************************************************
+};
 
 
 @end
