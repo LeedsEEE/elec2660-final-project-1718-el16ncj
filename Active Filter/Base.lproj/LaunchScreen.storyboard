@@ -28,11 +28,19 @@
                                     <constraint firstAttribute="height" constant="80" id="Qjs-bN-Q9B"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by: Noel Julian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdk-yJ-lWE">
+                                <rect key="frame" x="66" y="583" width="244" height="23"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21006185279411366" green="0.3184710558768275" blue="0.78539663461538467" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="E3o-cr-MRw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="C4m-kq-mHg"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wdk-yJ-lWE" secondAttribute="bottom" constant="61" id="CWR-LR-MW0"/>
                             <constraint firstItem="E3o-cr-MRw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b9Q-nq-kwZ"/>
+                            <constraint firstItem="wdk-yJ-lWE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rkr-JB-tNZ"/>
                         </constraints>
                     </view>
                 </viewController>

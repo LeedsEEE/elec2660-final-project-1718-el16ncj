@@ -231,7 +231,21 @@
     (void)self.BasicObject.det_cn;
     (void)self.BasicObject.calc_freq;
     (void)self.BasicObject.calc_values;
+    
+    if(self.BasicObject.freq1 == 0) {
+        (void)self.displayWarning;
+    }
 };
 
+-(void) displayWarning {
+    
+    UIAlertController *textFieldLimitAlert = [UIAlertController alertControllerWithTitle:@"Warning!" message:@"Entering '0' or leaving the Cut-off Frequency field blank is an invalid input!" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+    
+    [textFieldLimitAlert addAction:ok];
+    
+    [self presentViewController:textFieldLimitAlert animated:YES completion:nil];
+}
 
 @end

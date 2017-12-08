@@ -331,47 +331,6 @@ numberOfRowsInComponent:(NSInteger)component {
 
 #pragma mark - Keyboard Notifications
 
-/*- (void)registerForKeyboardNotifications
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWasShown:)
-                                                 name:UIKeyboardDidShowNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillBeHidden:)
-                                                 name:UIKeyboardWillHideNotification object:nil];
-    
-};
-
-
-// Called when the UIKeyboardDidShowNotification is sent.
-- (void)keyboardWasShown:(NSNotification*)aNotification
-{
-    NSDictionary* info = [aNotification userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
-    self.scrollView.contentInset = contentInsets;
-    self.scrollView.scrollIndicatorInsets = contentInsets;
-    
-    // If active text field is hidden by keyboard, scroll it so it's visible
-    // Your app might not need or want this behavior.
-    CGRect aRect = self.view.frame;
-    aRect.size.height -= kbSize.height;
-    if (!CGRectContainsPoint(aRect, self.Stage3R.frame.origin) ) {
-        [self.scrollView scrollRectToVisible:self.Stage3R.frame animated:YES];
-    }
-};
-
-// Called when the UIKeyboardWillHideNotification is sent
-- (void)keyboardWillBeHidden:(NSNotification*)aNotification
-{
-    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
-    self.scrollView.contentInset = contentInsets;
-    self.scrollView.scrollIndicatorInsets = contentInsets;
-};
-*/
-
 -(void) textFieldDidBeginEditing:(UITextField *)textField {
     
     if(self.Stage1R == textField || self.Stage1C == textField) {
@@ -416,6 +375,8 @@ numberOfRowsInComponent:(NSInteger)component {
     (void)self.AdvancedObject.calc_gain_Res_val;
     (void)self.AdvancedObject.calc_Res_Cap_val;
     (void)self.AdvancedObject.calc_freq;
+    
+    (void)self.warningControl;
 };
 
 - (IBAction)HideKeyboard:(UIButton *)sender {
@@ -445,5 +406,32 @@ numberOfRowsInComponent:(NSInteger)component {
     }
 };
 
+-(void) displayWarning {
+    
+    UIAlertController *textFieldLimitAlert = [UIAlertController alertControllerWithTitle:@"Warning!" message:@"Entering '0' or leaving any one of the resistor or capacitor fields blank (unless disabled) is an invalid input!" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+    
+    [textFieldLimitAlert addAction:ok];
+    
+    [self presentViewController:textFieldLimitAlert animated:YES completion:nil];
+}
+
+-(void) warningControl {
+    
+    if(self.AdvancedObject.poles == 0) {
+        if(self.AdvancedObject.R1T == 0||self.AdvancedObject.C1T==0) {
+            (void)self.displayWarning;
+        }
+    }
+    else if(self.AdvancedObject.poles == 1) {
+        if(self.AdvancedObject.R1T == 0||self.AdvancedObject.C1T==0||self.AdvancedObject.R2T == 0||self.AdvancedObject.C2T==0) {
+            (void)self.displayWarning;
+        }
+    }
+    else if(self.AdvancedObject.R1T == 0||self.AdvancedObject.C1T==0||self.AdvancedObject.R2T == 0||self.AdvancedObject.C2T==0||self.AdvancedObject.R3T == 0||self.AdvancedObject.C3T==0) {
+        (void)self.displayWarning;
+    }
+}
 
 @end

@@ -27,5 +27,5 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-
+-(void) displayWarning;
 @end

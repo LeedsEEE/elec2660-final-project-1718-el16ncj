@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *CircuitDiagram;
+@property (weak, nonatomic) IBOutlet UIImageView *ResponseDiagram;
+@property (weak, nonatomic) IBOutlet UIScrollView *ResponseScrollView;
 
 @property (weak, nonatomic) IBOutlet UILabel *Stage1RLabel;
 @property (weak, nonatomic) IBOutlet UILabel *Stage1CLabel;
@@ -36,6 +38,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *Stage3RALabel;
 @property (weak, nonatomic) IBOutlet UILabel *Stage3RBLabel;
 @property (weak, nonatomic) IBOutlet UILabel *Stage3FLabel;
+
+- (IBAction)PanAndZoomInfo:(UIButton *)sender;
 
 -(void) setFilterLabelVal;
 -(void) displayCircuitDiagram;

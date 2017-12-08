@@ -24,6 +24,10 @@
 		CA7476741FD6E83B00B83430 /* go back.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7476721FD6E83B00B83430 /* go back.png */; };
 		CA7476771FD6EB4900B83430 /* AdvancedModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7476761FD6EB4900B83430 /* AdvancedModeViewController.m */; };
 		CA74767A1FD6F2F000B83430 /* AdvancedDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7476791FD6F2F000B83430 /* AdvancedDataModel.m */; };
+		CA86698F1FD9F0F70060C46A /* chebyshev low pass.png in Resources */ = {isa = PBXBuildFile; fileRef = CA86698B1FD9F0F70060C46A /* chebyshev low pass.png */; };
+		CA8669901FD9F0F70060C46A /* chebyshev high pass.png in Resources */ = {isa = PBXBuildFile; fileRef = CA86698C1FD9F0F70060C46A /* chebyshev high pass.png */; };
+		CA8669911FD9F0F70060C46A /* butterworth low pass.png in Resources */ = {isa = PBXBuildFile; fileRef = CA86698D1FD9F0F70060C46A /* butterworth low pass.png */; };
+		CA8669921FD9F0F70060C46A /* butterworth high pass.png in Resources */ = {isa = PBXBuildFile; fileRef = CA86698E1FD9F0F70060C46A /* butterworth high pass.png */; };
 		CAE08EFA1FBC2801006DAD91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08EF91FBC2801006DAD91 /* main.m */; };
 		CAE08EFD1FBC2801006DAD91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08EFC1FBC2801006DAD91 /* AppDelegate.m */; };
 		CAE08F001FBC2801006DAD91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE08EFF1FBC2801006DAD91 /* ViewController.m */; };
@@ -79,6 +83,10 @@
 		CA7476761FD6EB4900B83430 /* AdvancedModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedModeViewController.m; sourceTree = "<group>"; };
 		CA7476781FD6F2F000B83430 /* AdvancedDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedDataModel.h; sourceTree = "<group>"; };
 		CA7476791FD6F2F000B83430 /* AdvancedDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedDataModel.m; sourceTree = "<group>"; };
+		CA86698B1FD9F0F70060C46A /* chebyshev low pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chebyshev low pass.png"; sourceTree = "<group>"; };
+		CA86698C1FD9F0F70060C46A /* chebyshev high pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chebyshev high pass.png"; sourceTree = "<group>"; };
+		CA86698D1FD9F0F70060C46A /* butterworth low pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butterworth low pass.png"; sourceTree = "<group>"; };
+		CA86698E1FD9F0F70060C46A /* butterworth high pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butterworth high pass.png"; sourceTree = "<group>"; };
 		CAE08EF51FBC2801006DAD91 /* Active Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Active Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE08EF91FBC2801006DAD91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CAE08EFB1FBC2801006DAD91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +140,10 @@
 		CA1E30241FD808D40020A11C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CA86698B1FD9F0F70060C46A /* chebyshev low pass.png */,
+				CA86698C1FD9F0F70060C46A /* chebyshev high pass.png */,
+				CA86698D1FD9F0F70060C46A /* butterworth low pass.png */,
+				CA86698E1FD9F0F70060C46A /* butterworth high pass.png */,
 				CA1E30281FD8A9270020A11C /* App Title.png */,
 				CA1E302A1FD8AD850020A11C /* App Title 4.png */,
 				CA1E302B1FD8AD850020A11C /* App Title 3.png */,
@@ -344,11 +356,15 @@
 			files = (
 				CAE08F081FBC2801006DAD91 /* LaunchScreen.storyboard in Resources */,
 				CAE32C081FD35BCB00BCD21C /* info.png in Resources */,
+				CA8669901FD9F0F70060C46A /* chebyshev high pass.png in Resources */,
 				CA74766B1FD692F600B83430 /* low-pass 6 pole.png in Resources */,
+				CA8669911FD9F0F70060C46A /* butterworth low pass.png in Resources */,
+				CA86698F1FD9F0F70060C46A /* chebyshev low pass.png in Resources */,
 				CAE32C0A1FD361FB00BCD21C /* home.png in Resources */,
 				CA7476731FD6E83B00B83430 /* go front.png in Resources */,
 				CA74766D1FD692F600B83430 /* low-pass 2 pole.png in Resources */,
 				CAE08F051FBC2801006DAD91 /* Assets.xcassets in Resources */,
+				CA8669921FD9F0F70060C46A /* butterworth high pass.png in Resources */,
 				CAE32C061FD3124D00BCD21C /* icons8-left-80.png in Resources */,
 				CA74766F1FD692F600B83430 /* high-pass 4 pole.png in Resources */,
 				CA1E302E1FD8AD850020A11C /* App Title 4.png in Resources */,

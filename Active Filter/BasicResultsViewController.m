@@ -39,8 +39,15 @@
     self.ScrollView.contentSize = self.CircuitDiagram.frame.size;
     self.ScrollView.delegate = self;
     
+    self.ResponseScrollView.minimumZoomScale = 1.0;
+    self.ResponseScrollView.maximumZoomScale = 6.0;
+    self.ResponseScrollView.contentSize = self.ResponseDiagram.frame.size;
+    self.ResponseScrollView.delegate = self;
+
+    
     (void)self.displayCircuitDiagram;
     (void)self.setCalcLabelVal;
+    (void)self.displayResponseDiagram;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +64,7 @@
  // Pass the selected object to the new view controller.
  }
  */
+
 
 -(void) setFilterLabelVal {
     
@@ -148,49 +156,6 @@
     }
 };
 
--(void) displayCircuitDiagram {
-    
-    [self.ScrollView.layer setBorderColor:[[UIColor whiteColor] CGColor]];
-    [self.ScrollView.layer setCornerRadius:5.0];
-    [self.ScrollView.layer setBorderWidth: 4.0];
-    
-    if (self.BasicObjectPassed.type == 0) {
-        
-        if(self.BasicObjectPassed.poles == 0) {
-            self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 2 pole.png"];
-        }
-        
-        else if(self.BasicObjectPassed.poles == 1) {
-            self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 4 pole.png"];
-        }
-        
-        else if(self.BasicObjectPassed.poles == 2) {
-            self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 6 pole.png"];
-        }
-    }
-    
-    else if(self.BasicObjectPassed.type == 1) {
-        
-        
-        if(self.BasicObjectPassed.poles == 0) {
-            self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 2 pole.png"];
-        }
-        
-        else if(self.BasicObjectPassed.poles == 1) {
-            self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 4 pole.png"];
-        }
-        
-        else if(self.BasicObjectPassed.poles == 2) {
-            self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 6 pole.png"];
-        }
-    }
-};
-
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    
-    return self.CircuitDiagram;
-    
-};
 
 - (void) setCalcLabelVal {
     
@@ -790,5 +755,91 @@
         
     }
 };
+
+
+-(void) displayCircuitDiagram {
+    
+    [self.ScrollView.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [self.ScrollView.layer setCornerRadius:5.0];
+    [self.ScrollView.layer setBorderWidth: 4.0];
+    
+    if (self.BasicObjectPassed.type == 0) {
+        
+        if(self.BasicObjectPassed.poles == 0) {
+            self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 2 pole.png"];
+        }
+        
+        else if(self.BasicObjectPassed.poles == 1) {
+            self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 4 pole.png"];
+        }
+        
+        else if(self.BasicObjectPassed.poles == 2) {
+            self.CircuitDiagram.image = [UIImage imageNamed:@"low-pass 6 pole.png"];
+        }
+    }
+    
+    else if(self.BasicObjectPassed.type == 1) {
+        
+        
+        if(self.BasicObjectPassed.poles == 0) {
+            self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 2 pole.png"];
+        }
+        
+        else if(self.BasicObjectPassed.poles == 1) {
+            self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 4 pole.png"];
+        }
+        
+        else if(self.BasicObjectPassed.poles == 2) {
+            self.CircuitDiagram.image = [UIImage imageNamed:@"high-pass 6 pole.png"];
+        }
+    }
+};
+
+-(void) displayResponseDiagram {
+  
+    [self.ResponseScrollView.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [self.ResponseScrollView.layer setCornerRadius:5.0];
+    [self.ResponseScrollView.layer setBorderWidth: 4.0];
+    
+    
+    if(self.BasicObjectPassed.type == 0) {
+        
+        if(self.BasicObjectPassed.characteristics == 0) {
+            self.ResponseDiagram.image = [UIImage imageNamed:@"butterworth low pass.png"];
+        }
+        else if(self.BasicObjectPassed.characteristics == 1) {
+            self.ResponseDiagram.image = [UIImage imageNamed:@"chebyshev low pass.png"];
+        }
+    }
+    
+    else if(self.BasicObjectPassed.type == 1) {
+        
+        if(self.BasicObjectPassed.characteristics == 0) {
+            self.ResponseDiagram.image = [UIImage imageNamed:@"butterworth high pass.png"];
+        }
+        else if (self.BasicObjectPassed.characteristics == 1) {
+            self.ResponseDiagram.image = [UIImage imageNamed:@"chebyshev high pass.png"];
+        }
+    }
+};
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    
+    return self.CircuitDiagram;
+    return self.ResponseDiagram;
+    
+};
+
+- (IBAction)PanAndZoomInfo:(UIButton *)sender {
+    
+    UIAlertController *textFieldLimitAlert = [UIAlertController alertControllerWithTitle:@"Pan & Zoom" message:@"The user can use the 'Pinch To Zoom' gesture to zoom into the circuit diagram and use a single touch to pan around the circuit diagram." preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+    
+    [textFieldLimitAlert addAction:ok];
+    
+    [self presentViewController:textFieldLimitAlert animated:YES completion:nil];
+}
+
 
 @end

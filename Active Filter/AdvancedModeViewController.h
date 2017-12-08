@@ -36,5 +36,6 @@
 - (IBAction)CalcButton:(UIButton *)sender;
 - (IBAction)HideKeyboard:(UIButton *)sender;
 
-
+-(void) displayWarning;
+-(void) warningControl;
 @end
